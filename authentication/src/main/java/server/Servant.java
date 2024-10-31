@@ -13,43 +13,35 @@ public class Servant extends UnicastRemoteObject implements Service {
         return "Printing " + fileName + " From " + printer;
     }
 
-    public void queue(String printer) throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'queue'");
+    public String queue(String printer) throws RemoteException {
+        return "Here Is The Queue For Printer: " + printer;
     }
 
-    public void topQueue(String printer, int job) throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'topQueue'");
+    public String topQueue(String printer, int job) throws RemoteException {
+        return "Printer: " + printer + ", Moved Job: " + job + ", To The Top";
     }
 
-    public void start() throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'start'");
+    public String start() throws RemoteException {
+        return "Started Print Server";
     }
 
-    public void stop() throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'stop'");
+    public String stop() throws RemoteException {
+        return "Stopped Print Server";
     }
 
-    public void restart() throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'restart'");
+    public String restart() throws RemoteException {
+        return "Print Server Restarted";
     }
 
-    public void status(String printer) throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'status'");
+    public String status(String printer) throws RemoteException {
+        return "Here Is The Status Of Printer: " + printer;
     }
 
-    public void readConfig(String parameter) throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'readConfig'");
+    public String readConfig(String parameter) throws RemoteException {
+        return "Here Is The Configuration For: " + parameter;
     }
 
-    public void setConfig(String parameter, String value) throws RemoteException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setConfig'");
+    public String setConfig(String parameter, String value) throws RemoteException {
+        return "Parameter: " + parameter + ", Has Been Set To: " + value;
     }
 }
