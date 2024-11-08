@@ -5,7 +5,6 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import server.Service;
@@ -13,10 +12,16 @@ import server.Service;
 public class Client {
     public static Scanner sc;
     public static Service service;
+    private static String username;
 
     public static void client(String[] args) throws MalformedURLException, RemoteException, NotBoundException {
         service = (Service) Naming.lookup("rmi://localhost:6969/Printer");
         sc = new Scanner(System.in);
+
+        if (!login()) {
+            System.out.println("Login failed. Exiting program.");
+            return;
+        }
 
         boolean clientActive = true;
         while (clientActive) {
@@ -56,10 +61,25 @@ public class Client {
                     wrongInput();
                     break;
             }
-            // System.out.println("--- " + service.print("secret.txt", "CoolPrinter"));
-            // clientActive = false;
         }
         sc.close();
+    }
+
+    private static boolean login() {
+        clearConsole();
+        System.out.println("Enter username:");
+        username = sc.nextLine();
+        System.out.println("Enter password:");
+        String password = sc.nextLine();
+
+        try {
+            String response = service.login(username, password);
+            System.out.println(response);
+            return response.toLowerCase().contains("successful");
+        } catch (RemoteException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     private static void setConfig() {
@@ -73,7 +93,7 @@ public class Client {
 
         clearConsole();
         try {
-            System.out.println("--- " + service.setConfig(param, val));
+            System.out.println("--- " + service.setConfig(username, param, val));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -87,7 +107,7 @@ public class Client {
 
         clearConsole();
         try {
-            System.out.println("--- " + service.readConfig(param));
+            System.out.println("--- " + service.readConfig(username, param));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -101,7 +121,7 @@ public class Client {
 
         clearConsole();
         try {
-            System.out.println("--- " + service.status(printer));
+            System.out.println("--- " + service.status(username, printer));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -111,7 +131,7 @@ public class Client {
     private static void restart() {
         clearConsole();
         try {
-            System.out.println("--- " + service.restart());
+            System.out.println("--- " + service.restart(username));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -121,7 +141,7 @@ public class Client {
     private static void stop() {
         clearConsole();
         try {
-            System.out.println("--- " + service.stop());
+            System.out.println("--- " + service.stop(username));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -131,7 +151,7 @@ public class Client {
     private static void start() {
         clearConsole();
         try {
-            System.out.println("--- " + service.start());
+            System.out.println("--- " + service.start(username));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -145,19 +165,12 @@ public class Client {
 
         clearConsole();
         System.out.println("Type Job ID:");
-        int job = -1;
-        while (job < 0) {
-            try {
-                job = sc.nextInt();
-            }
-            catch (InputMismatchException e) {
-                System.out.println("Input Must Be A Number");
-            }
-        }
+        int job = sc.nextInt();
+        sc.nextLine(); // Consume the newline
 
         clearConsole();
         try {
-            System.out.println("--- " + service.topQueue(printer, job));
+            System.out.println("--- " + service.topQueue(username, printer, job));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -171,7 +184,7 @@ public class Client {
 
         clearConsole();
         try {
-            System.out.println("--- " + service.queue(printer));
+            System.out.println("--- " + service.queue(username, printer));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -189,7 +202,7 @@ public class Client {
 
         clearConsole();
         try {
-            System.out.println("--- " + service.print(name, printer));
+            System.out.println("--- " + service.print(username, name, printer));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
