@@ -1,4 +1,15 @@
-Authentication:
+# Need to have
+
+
 Better password safety, salt + hashing, 
     Rate limit the attempts for password guessing to mitigate bruteforcing
 Make the logger repeat the logs + more info to internal file
+
+Access control:
+Access Control Scenario + list
+
+
+# Nice to have
+If we have enough time: Be able to create users, not neccesary since according to the assignment it's fine if they are created manually.
+
+

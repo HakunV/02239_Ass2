@@ -34,8 +34,10 @@ public class Servant extends UnicastRemoteObject implements Service {
         activeSessions = new HashMap<>();
         
         // Sample user setup (In real applications, this should be securely loaded)
-        userPasswordMap.put("user1", "password123");
-        userPasswordMap.put("admin", "adminpass");
+        userPasswordMap.put("AliceAdmin", "adminpass");
+        userPasswordMap.put("BobJanitor", "servicepass");
+        userPasswordMap.put("CeciliaPowerUser", "powerpass");
+
     }
 
     private String[] getUserInfo(String username) {

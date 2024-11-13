@@ -1,0 +1,18 @@
+usrnm
+pw
+
+-->
+
+SAVED:
+usrnm
+hash_pw
+SALT
+
+
+
+hash:
+usrnm_hash = Hash(usrnm,SALT)
+hash_pw = Hash(pw, usrnm_hash)
+
+hash_pw1 = Hash(pw,SALT)
+hash_pw2 = Hash(pw, Hash(usrnm, SALT)) USE THIS!!
