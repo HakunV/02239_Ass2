@@ -1,0 +1,3 @@
+Better password safety, salt + hashing, 
+    Rate limit the attempts for password guessing to mitigate bruteforcing
+Make the logger repeat the logs + more info to internal file
