@@ -1,10 +1,23 @@
 package server;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
+
+import org.bouncycastle.crypto.generators.Argon2BytesGenerator;
+import org.bouncycastle.crypto.params.Argon2Parameters;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import java.security.Security;
+import java.security.SecureRandom;
+import java.security.NoSuchAlgorithmException;
 
 public class Servant extends UnicastRemoteObject implements Service {
 
@@ -12,6 +25,8 @@ public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, String> userPasswordMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
+
+    private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
 
     public Servant() throws RemoteException {
         super();
@@ -23,10 +38,44 @@ public class Servant extends UnicastRemoteObject implements Service {
         userPasswordMap.put("admin", "adminpass");
     }
 
+    private String[] getUserInfo(String username) {
+        BufferedReader reader = null;
+        String line = "";
+
+        try {
+            reader = new BufferedReader(new FileReader(Servant.PASSWORD_FILE));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while ((line = reader.readLine()) != null) {
+                String[] user = line.split(",");
+
+                if (user[0].equals(username)) {
+                    return user;
+                }
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     // Simple authentication check
     private boolean authenticate(String username, String password) {
-        if (userPasswordMap.containsKey(username)) {
-            return userPasswordMap.get(username).equals(password);
+        String[] userInfo = getUserInfo(username);
+
+        if (userInfo == null) {
+            return false;
+        }
+
+        String userHash = hash_Argon2(userInfo[0], userInfo[2]);
+        String passwordHash = hash_Argon2(password, userHash);
+
+        if (passwordHash.equals(userInfo[1])) {
+            return true;
         }
         return false;
     }
@@ -147,5 +196,32 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Set configuration parameter " + parameter + " to " + value;
         }
         return "Unauthorized access.";
+    }
+
+    private String getRandomSalt() {
+        SecureRandom secRan = new SecureRandom();
+        byte[] bytes = new byte[16];
+        secRan.nextBytes(bytes);
+
+        return Base64.getEncoder().encodeToString(bytes);
+    }
+
+    public String hash_Argon2(String password, String salt) {
+        Security.addProvider(new BouncyCastleProvider());
+
+        Argon2BytesGenerator gen = new Argon2BytesGenerator();
+        Argon2Parameters.Builder builder = new Argon2Parameters.Builder();
+
+        byte[] resultHash = new byte[256];
+
+        builder.withIterations(5);
+        builder.withSalt(salt.getBytes());
+        builder.withVersion(19);
+
+        Argon2Parameters params = builder.build();
+        gen.init(params);
+        gen.generateBytes(password.toCharArray(), resultHash);
+
+        return Base64.getEncoder().encodeToString(resultHash);
     }
 }
