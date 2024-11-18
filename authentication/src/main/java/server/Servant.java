@@ -23,15 +23,6 @@ import java.security.Security;
 import java.security.SecureRandom;
 import java.security.NoSuchAlgorithmException;
 
-// AliceAdmin, adminpass
-// BobJanitor, servicepass
-// CeciliaPowerUser, powerpass
-// DavidUser, secretpassword
-// EricaUser, pasword1234
-// FredUser, 1234567654321
-// GeorgeUser, georgian
-
-
 public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, String> userPasswordMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time

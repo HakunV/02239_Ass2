@@ -1,0 +1,6 @@
+nov. 18, 2024 1:04:52 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 18, 2024 1:05:37 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 18, 2024 1:05:52 PM server.Servant login
+WARNING: Login failed for user: EricaUser
