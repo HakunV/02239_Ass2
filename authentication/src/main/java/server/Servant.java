@@ -34,10 +34,13 @@ public class Servant extends UnicastRemoteObject implements Service {
         activeSessions = new HashMap<>();
         
         // Sample user setup (In real applications, this should be securely loaded)
-        //  Alice, Bob and Cecilia are administrators, servicetechnician and poweruser who are allowed to perform more operations.
-        userPasswordMap.put("AliceAdmin", "adminpass");
-        userPasswordMap.put("BobJanitor", "servicepass");
-        userPasswordMap.put("CeciliaPowerUser", "powerpass");
+        userPasswordMap.put("user1", "password123");
+        userPasswordMap.put("admin", "adminpass");
+
+        //  Alice, Bob and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
+        userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
+        userPasswordMap.put("BobJanitor", "servicepass"); // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
+        userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
         //  David, Erica, Fred and George are ordinary users who are only allowed to print files and display the print queue.
         userPasswordMap.put("David", "davidpass");
         userPasswordMap.put("Erica", "ericapass");
