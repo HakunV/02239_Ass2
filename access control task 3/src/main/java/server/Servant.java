@@ -35,15 +35,18 @@ public class Servant extends UnicastRemoteObject implements Service {
         configureLogger();
         userPasswordMap = new HashMap<>();
         activeSessions = new HashMap<>();
-        //  Alice, Bob and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
+
+        // Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
         userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
-        userPasswordMap.put("BobJanitor", "servicepass"); // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
+        userPasswordMap.put("George", "servicepass"); 
+        userPasswordMap.put("Ida", "IDApowerpass"); // Ida
         userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
         //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
         userPasswordMap.put("David", "davidpass");
         userPasswordMap.put("Erica", "ericapass");
         userPasswordMap.put("Fred", "fredpass");
-        userPasswordMap.put("George", "georgepass");
+        userPasswordMap.put("Henry", "henrypass"); // Henry
+
 
 
     }
