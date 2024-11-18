@@ -1,0 +1,33 @@
+# Need to have
+Authentication:
+Test the logger
+
+# Access control:
+
+## User, role and right overview:
+Alice is managing the print server, so she has the rights to perform all operations. 
+
+Bob is the janitor who doubles as service technician, he has the rights to start, stop and restart the print server as well as inspect and modify the service parameters, i.e., invoke the status, readConfig and setConfig operations. 
+
+Cecilia is a power user, who is allowed to print files and manage the print queue, i.e., use queue and topQueue as well as restart the print server when everything seems to be stuck. 
+
+David, Erica, Fred and George are ordinary users who are only allowed to print files and display the print queue.
+
+## Tasks:
+
+The first task is to modify the prototype print server developed in the Authentication lab, so that it implements the necessary code to enforce the access control policy outlined above. This means that all registered users must be included in the password-file/-database defined in the Authentication lab. This first implementation should be based on an access control list for the print server, i.e. the print server is considered as a single object with the different methods as the possible operations. The access control list must be specified in an external policy file, or another form of external media, that is loaded when the print server starts, i.e. the policy must not be hardcoded into the program.
+
+
+The second task is to identify roles and define a role hierarchy and permissions for each role, so that the access control policy outlined above can be implemented. The third task is to develop a second prototype, based on the prototype developed in the authentication lab, which enforces the access control policy using Role Based Access Control, i.e. based on the role hierarchy and permissions defined in Task 2. The role hierarchy must be specified in one or more external policy files, or the same form of external media used in Task 1, that is/are loaded when the print server starts.
+
+Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
+
+
+The final task is to implement the necessary changes in the access control policy specifications of the two prototypes developed in this lab, so that they reflect the organisational changes in the company. The experience gained from these modifications will allow you to compare the management support for the two policy enforcement mechanisms, i.e. the flexibility and facility with which organisational changes can be reflected in the access control policy. This comparison must highlight the strengths and weaknesses of each implementation and discuss the expressive power and the ease of management supported by the two policy specification abstractions, e.g., which organisational changes are easily captured in both implementations and which are more easily specified in one implementation than in the other.
+Report
+
+
+# Nice to have
+If we have enough time: Be able to create users, not neccesary since according to the assignment it's fine if they are created manually.
+
+
