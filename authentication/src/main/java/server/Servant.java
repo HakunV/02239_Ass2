@@ -41,7 +41,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
         userPasswordMap.put("BobJanitor", "servicepass"); // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
         userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
-        //  David, Erica, Fred and George are ordinary users who are only allowed to print files and display the print queue.
+        //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
         userPasswordMap.put("David", "davidpass");
         userPasswordMap.put("Erica", "ericapass");
         userPasswordMap.put("Fred", "fredpass");
