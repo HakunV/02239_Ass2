@@ -211,7 +211,7 @@ public class Client {
 
     private static void wrongInput() {
         clearConsole();
-        System.out.println("INVALID INPUT!!! Try Again");
+        System.out.println("Invalid Input!!! Try Again");
         waitFor(2000);
     }
 

@@ -1,5 +1,9 @@
 package server;
 
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.SimpleFormatter;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,19 +21,18 @@ import org.bouncycastle.crypto.params.Argon2Parameters;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.Security;
 import java.security.SecureRandom;
-import java.security.NoSuchAlgorithmException;
 
 public class Servant extends UnicastRemoteObject implements Service {
-
-    private static final Logger logger = Logger.getLogger(Servant.class.getName());
     private Map<String, String> userPasswordMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
 
     private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
+    private static final String EVENTLOG_FILE = new File("authentication/src/main/java/server/eventlogs").getAbsolutePath();
 
     public Servant() throws RemoteException {
         super();
+        configureLogger();
         userPasswordMap = new HashMap<>();
         activeSessions = new HashMap<>();
         
@@ -49,6 +52,56 @@ public class Servant extends UnicastRemoteObject implements Service {
 
 
     }
+   private static final Logger logger = Logger.getLogger(Servant.class.getName());
+
+    private void configureLogger() {
+        try {
+            // Step 1: Verify and create the log directory
+            File logDir = new File(EVENTLOG_FILE);
+            if (!logDir.exists()) {
+                if (logDir.mkdirs()) {
+                    System.out.println("Log directory created: " + logDir.getAbsolutePath());
+                } else {
+                    System.err.println("Failed to create log directory: " + logDir.getAbsolutePath());
+                }
+            }
+
+            // Step 2: Clear existing handlers for this logger
+            clearHandlers(logger);
+
+            // Step 3: Create a FileHandler
+            String logFilePath = EVENTLOG_FILE + "/eventlog.log";
+            System.out.println("Resolved log file path: " + logFilePath);
+            FileHandler fileHandler = new FileHandler(logFilePath, true);
+            fileHandler.setFormatter(new SimpleFormatter());
+            fileHandler.setLevel(java.util.logging.Level.ALL);
+
+            // Step 4: Attach the FileHandler to the logger
+            logger.addHandler(fileHandler);
+
+            // Step 5: Disable parent handlers
+            logger.setUseParentHandlers(false);
+
+            // Step 6: Set logger level
+            logger.setLevel(java.util.logging.Level.ALL);
+
+            // Debugging: Confirm configuration
+            System.out.println("Logger handlers configured: " + logger.getHandlers().length);
+            logger.info("Logger configuration complete.");
+
+        } catch (IOException e) {
+            System.err.println("Error configuring logger: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    private void clearHandlers(Logger logger) {
+        for (Handler handler : logger.getHandlers()) {
+            handler.close();
+            logger.removeHandler(handler);
+        }
+    }
+
 
     private String[] getUserInfo(String username) {
         BufferedReader reader = null;
@@ -100,6 +153,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("User " + username + " logged in with session valid until: " + expirationTime);
             return "Login successful. Session active.";
         }
+        logger.warning("Login failed for user: " + username);
         return "Login failed. Invalid credentials.";
     }
 
@@ -111,6 +165,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             if (currentTime < expirationTime) {
                 // Extend session validity upon valid use
                 activeSessions.put(username, currentTime + SESSION_DURATION);
+                logger.info("Session extended for user: " + username);
                 return true;
             } else {
                 activeSessions.remove(username); // Invalidate session
@@ -236,4 +291,4 @@ public class Servant extends UnicastRemoteObject implements Service {
 
         return Base64.getEncoder().encodeToString(resultHash);
     }
-}
+} 
