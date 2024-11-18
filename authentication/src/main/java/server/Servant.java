@@ -19,6 +19,15 @@ import java.security.Security;
 import java.security.SecureRandom;
 import java.security.NoSuchAlgorithmException;
 
+// AliceAdmin, adminpass
+// BobJanitor, servicepass
+// CeciliaPowerUser, powerpass
+// DavidUser, secretpassword
+// EricaUser, pasword1234
+// FredUser, 1234567654321
+// GeorgeUser, georgian
+
+
 public class Servant extends UnicastRemoteObject implements Service {
 
     private static final Logger logger = Logger.getLogger(Servant.class.getName());
@@ -37,7 +46,6 @@ public class Servant extends UnicastRemoteObject implements Service {
         userPasswordMap.put("AliceAdmin", "adminpass");
         userPasswordMap.put("BobJanitor", "servicepass");
         userPasswordMap.put("CeciliaPowerUser", "powerpass");
-
     }
 
     private String[] getUserInfo(String username) {
@@ -75,6 +83,22 @@ public class Servant extends UnicastRemoteObject implements Service {
 
         String userHash = hash_Argon2(userInfo[0], userInfo[2]);
         String passwordHash = hash_Argon2(password, userHash);
+
+        // System.out.println("Username: " + username);
+
+        // String salt = getRandomSalt();
+        // System.out.println("Salt: " + salt);
+
+        // String userHash = hash_Argon2(username, salt);
+
+        // String passwordHash = hash_Argon2(password, userHash);
+        // System.out.println("Password Hash: " + passwordHash);
+
+        // try {
+        //     Thread.sleep(10000);
+        // } catch (InterruptedException e) {
+        //     e.printStackTrace();
+        // }
 
         if (passwordHash.equals(userInfo[1])) {
             return true;
