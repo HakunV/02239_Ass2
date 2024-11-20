@@ -23,6 +23,6 @@ public interface Service extends Remote {
 
     public String setConfig(String username, String parameter, String value) throws RemoteException;
 
-    String login(String username, String password) throws RemoteException;
+    public String login(String username, String password) throws RemoteException;
 
 }

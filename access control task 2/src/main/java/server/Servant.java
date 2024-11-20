@@ -56,7 +56,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Login successful. Session active.";
         }
         logger.warning("Login failed for user: " + username);
-        return "Login failed. Invalid credentials.";
+        return "Login failed. Invalid credentials.\nWait 5 seconds to try again";
     }
 
     private void configureLogger() {
@@ -120,9 +120,12 @@ public class Servant extends UnicastRemoteObject implements Service {
                 String[] user = line.split(",");
 
                 if (user[0].equals(username)) {
+                    reader.close();
                     return user;
                 }
             }
+
+            reader.close();
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -168,9 +171,12 @@ public class Servant extends UnicastRemoteObject implements Service {
                 String[] user = line.split(",");
 
                 if (user[0].equals(username)) {
+                    reader.close();
                     return user[3];
                 }
             }
+
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -192,9 +198,12 @@ public class Servant extends UnicastRemoteObject implements Service {
                 String[] roleInfo = line.split(",");
 
                 if (roleInfo[0].equals(role)) {
+                    reader.close();
                     return roleInfo[1].split(":");
                 }
             }
+
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

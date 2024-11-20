@@ -150,3 +150,151 @@ nov. 20, 2024 4:16:30 PM server.Servant isSessionValid
 INFO: Session extended for user: DavidUser
 nov. 20, 2024 4:16:33 PM server.Servant isSessionValid
 INFO: Session extended for user: DavidUser
+nov. 20, 2024 9:17:42 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:17:46 PM server.Servant login
+WARNING: Login failed for user: wefw
+nov. 20, 2024 9:17:54 PM server.Servant login
+WARNING: Login failed for user: wefewf
+nov. 20, 2024 9:18:17 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732134197781
+nov. 20, 2024 9:20:17 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:20:19 PM server.Servant login
+WARNING: Login failed for user: ewfwef
+nov. 20, 2024 9:21:09 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:21:10 PM server.Servant login
+WARNING: Login failed for user: wefew
+nov. 20, 2024 9:21:24 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732134384321
+nov. 20, 2024 9:21:30 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 9:21:30 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: dewfe, Printer: wefef
+nov. 20, 2024 9:21:34 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 9:21:34 PM server.Servant restart
+INFO: Restart command received. User: AliceAdmin
+nov. 20, 2024 9:23:39 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:23:50 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732134530174
+nov. 20, 2024 9:26:31 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:26:40 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732134700060
+nov. 20, 2024 9:35:03 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:35:10 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135210583
+nov. 20, 2024 9:35:21 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:35:32 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135232122
+nov. 20, 2024 9:38:33 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:38:43 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135423097
+nov. 20, 2024 9:40:43 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:40:50 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135550341
+nov. 20, 2024 9:49:25 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:49:31 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135771230
+nov. 20, 2024 9:50:28 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 9:50:28 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 9:53:02 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:53:09 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732135989386
+nov. 20, 2024 9:54:03 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 9:54:03 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 9:56:00 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 9:56:07 PM server.Servant login
+WARNING: Login failed for user: AliceAdmin
+nov. 20, 2024 9:56:18 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732136178440
+nov. 20, 2024 9:56:52 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 9:56:52 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 10:02:24 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 10:02:31 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732136551928
+nov. 20, 2024 10:03:26 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 10:03:26 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 10:03:34 PM server.Servant login
+WARNING: Login failed for user: asdas
+nov. 20, 2024 10:03:48 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732136628461
+nov. 20, 2024 10:10:00 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 10:10:13 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732137013684
+nov. 20, 2024 10:10:35 PM server.Servant isSessionValid
+INFO: Session expired for user: DavidUser
+nov. 20, 2024 10:10:35 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: DavidUser, Session invalid
+nov. 20, 2024 10:11:03 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732137063552
+nov. 20, 2024 10:11:06 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 10:11:06 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 10:11:12 PM server.Servant login
+WARNING: Login failed for user: wefwf
+nov. 20, 2024 10:11:19 PM server.Servant login
+WARNING: Login failed for user: fwewef
+nov. 20, 2024 10:11:29 PM server.Servant login
+WARNING: Login failed for user: exit
+nov. 20, 2024 10:11:45 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732137105685
+nov. 20, 2024 10:12:23 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 10:12:33 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732137153656
+nov. 20, 2024 10:12:43 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 10:12:43 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 10:12:51 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732137171707
+nov. 20, 2024 10:12:53 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 10:12:53 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 10:13:30 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 10:13:36 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732137516092
+nov. 20, 2024 10:13:39 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 10:13:39 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: werw, Printer: fwefw
+nov. 20, 2024 10:13:42 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 10:13:42 PM server.Servant stop
+INFO: Stop command received. User: AliceAdmin
+nov. 20, 2024 10:13:46 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 10:13:46 PM server.Servant start
+INFO: Start command received. User: AliceAdmin
+nov. 20, 2024 10:13:54 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 10:13:54 PM server.Servant queue
+INFO: Queue command received. User: AliceAdmin, Printer: sfsdf
+nov. 20, 2024 10:14:03 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 10:14:03 PM server.Servant topQueue
+INFO: Top queue command received. User: AliceAdmin, Printer: wefw, Job: 4
