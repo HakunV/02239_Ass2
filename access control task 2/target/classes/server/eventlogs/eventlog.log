@@ -50,3 +50,35 @@ nov. 20, 2024 3:09:51 PM server.Servant isSessionValid
 INFO: Session expired for user: AliceAdmin
 nov. 20, 2024 3:09:51 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 3:16:20 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 3:25:33 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 3:25:44 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732112744934
+nov. 20, 2024 3:25:48 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 3:25:48 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 3:26:24 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 3:26:30 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732113090870
+nov. 20, 2024 3:26:33 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 3:26:33 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: afss, Printer: afas
+nov. 20, 2024 3:26:58 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 3:26:58 PM server.Servant setConfig
+INFO: Set configuration command received. User: AliceAdmin, Parameter: time, Value: 12
+nov. 20, 2024 3:27:04 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 3:27:33 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732113153979
+nov. 20, 2024 3:27:38 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 3:27:38 PM server.Servant print
+INFO: Print command received. User: DavidUser, File: asfsaf, Printer: fsdfs
+nov. 20, 2024 3:27:43 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
