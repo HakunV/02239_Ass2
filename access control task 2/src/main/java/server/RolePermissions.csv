@@ -1,0 +1,5 @@
+role,permissions
+admin,all
+technician,start:stop:restart:queue:status:readConfig:setConfig
+poweruser,print:queue:topQueue:restart
+user,print:queue

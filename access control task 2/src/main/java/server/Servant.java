@@ -32,32 +32,19 @@ import java.security.SecureRandom;
 // GeorgeUser, georgian
 
 public class Servant extends UnicastRemoteObject implements Service {
-    private Map<String, String> userPasswordMap;
-    private Map<String, Role> userRoleMap;
-    private Map<Role, List<String>> rolePermissions;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
 
+    private static final String ROLE_FILE = new File("access control task 2/src/main/java/server/RolePermissions.csv").getAbsolutePath();
     private static final String PASSWORD_FILE = new File("access control task 2/src/main/java/server/passwords.csv").getAbsolutePath();
     private static final String EVENTLOG_FILE = new File("access control task 2/src/main/java/server/eventlogs").getAbsolutePath();
 
     private static final Logger logger = Logger.getLogger(Servant.class.getName());
 
-    // Define roles
-    private enum Role {
-        ADMIN, TECHNICIAN, POWER_USER, ORDINARY_USER
-    }
-
     public Servant() throws RemoteException {
         super();
         configureLogger();
-        userPasswordMap = new HashMap<>();
-        userRoleMap = new HashMap<>();
-        rolePermissions = new HashMap<>();
         activeSessions = new HashMap<>();
-
-        initializeUsers();
-        initializeRolePermissions();
     }
 
     // Session creation
@@ -70,38 +57,6 @@ public class Servant extends UnicastRemoteObject implements Service {
         }
         logger.warning("Login failed for user: " + username);
         return "Login failed. Invalid credentials.";
-    }
-
-    private void initializeUsers() {
-        // Initialize users with roles and passwords
-        userPasswordMap.put("AliceAdmin", "adminpass");
-        userRoleMap.put("AliceAdmin", Role.ADMIN);
-
-        userPasswordMap.put("BobJanitor", "servicepass");
-        userRoleMap.put("BobJanitor", Role.TECHNICIAN);
-
-        userPasswordMap.put("CeciliaPowerUser", "powerpass");
-        userRoleMap.put("CeciliaPowerUser", Role.POWER_USER);
-
-        userPasswordMap.put("DavidUser", "secretpassword");
-        userRoleMap.put("DavidUser", Role.ORDINARY_USER);
-
-        userPasswordMap.put("EricaUser", "pasword1234");
-        userRoleMap.put("EricaUser", Role.ORDINARY_USER);
-
-        userPasswordMap.put("FredUser", "1234567654321");
-        userRoleMap.put("FredUser", Role.ORDINARY_USER);
-
-        userPasswordMap.put("GeorgeUser", "georgian");
-        userRoleMap.put("GeorgeUser", Role.ORDINARY_USER);
-    }
-
-    private void initializeRolePermissions() {
-        // Define permissions for each role
-        rolePermissions.put(Role.ADMIN, List.of("print", "queue", "topQueue", "start", "stop", "restart", "status", "readConfig", "setConfig"));
-        rolePermissions.put(Role.TECHNICIAN, List.of("start", "stop", "restart", "status", "readConfig", "setConfig"));
-        rolePermissions.put(Role.POWER_USER, List.of("print", "queue", "topQueue", "restart"));
-        rolePermissions.put(Role.ORDINARY_USER, List.of("print", "queue"));
     }
 
     private void configureLogger() {
@@ -176,11 +131,74 @@ public class Servant extends UnicastRemoteObject implements Service {
     }
 
     private boolean hasPermission(String username, String action) {
-        Role userRole = userRoleMap.get(username);
-        if (userRole != null) {
-            return rolePermissions.get(userRole).contains(action);
+        String userRole = getUserRole(username);
+        if (userRole == null) {
+            return false;
         }
+
+        String[] rolePerm = getRolePermissions(userRole);
+        if (rolePerm == null) {
+            return false;
+        }
+        else if (rolePerm[0].equals("all")) {
+            return true;
+        }
+        
+        for (String p : rolePerm) {
+            if (p.equals(action)) {
+                return true;
+            }
+        }
+
         return false;
+    }
+
+    private String getUserRole(String username) {
+        BufferedReader reader = null;
+        String line = "";
+
+        try {
+            reader = new BufferedReader(new FileReader(Servant.PASSWORD_FILE));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while((line = reader.readLine()) != null) {
+                String[] user = line.split(",");
+
+                if (user[0].equals(username)) {
+                    return user[3];
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private String[] getRolePermissions(String role) {
+        BufferedReader reader = null;
+        String line = "";
+
+        try {
+            reader = new BufferedReader(new FileReader(Servant.ROLE_FILE));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while((line = reader.readLine()) != null) {
+                String[] roleInfo = line.split(",");
+
+                if (roleInfo[0].equals(role)) {
+                    return roleInfo[1].split(":");
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     // Session validation check
@@ -201,10 +219,8 @@ public class Servant extends UnicastRemoteObject implements Service {
         return false;
     }
 
-    
-
-     // Helper method to enforce session check
-     private boolean validateSession(String username) throws RemoteException {
+    // Helper method to enforce session check
+    private boolean validateSession(String username) throws RemoteException {
         if (!isSessionValid(username)) {
             logger.warning("Unauthorized access attempt by user: " + username + ", Session invalid");
             throw new RemoteException("Session is not valid. Please log in again.");

@@ -82,3 +82,71 @@ nov. 20, 2024 3:27:38 PM server.Servant print
 INFO: Print command received. User: DavidUser, File: asfsaf, Printer: fsdfs
 nov. 20, 2024 3:27:43 PM server.Servant isSessionValid
 INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:09:02 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:09:14 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732115654514
+nov. 20, 2024 4:09:17 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:10:26 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:10:38 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732115738784
+nov. 20, 2024 4:10:42 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:12:02 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:12:13 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732115833926
+nov. 20, 2024 4:12:18 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:12:52 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:13:03 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732115883290
+nov. 20, 2024 4:13:07 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:13:07 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: fwefwe, Printer: fwwf
+nov. 20, 2024 4:13:35 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:13:46 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732115926287
+nov. 20, 2024 4:13:51 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:13:51 PM server.Servant print
+INFO: Print command received. User: DavidUser, File: wrwer, Printer: wefwf
+nov. 20, 2024 4:13:57 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:14:04 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:14:12 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:14:12 PM server.Servant queue
+INFO: Queue command received. User: DavidUser, Printer: sdgd
+nov. 20, 2024 4:15:40 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:15:49 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732116049692
+nov. 20, 2024 4:15:52 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:15:52 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: wer, Printer: wfefw
+nov. 20, 2024 4:15:59 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 4:15:59 PM server.Servant queue
+INFO: Queue command received. User: AliceAdmin, Printer: fdsf
+nov. 20, 2024 4:16:05 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 4:16:16 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732116076757
+nov. 20, 2024 4:16:21 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:16:21 PM server.Servant print
+INFO: Print command received. User: DavidUser, File: wefwf, Printer: weffw
+nov. 20, 2024 4:16:26 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:16:30 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 4:16:33 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
