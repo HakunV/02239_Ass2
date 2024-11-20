@@ -28,10 +28,11 @@ public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, Role> userRoleMap;
     private Map<Role, List<String>> rolePermissions;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
-    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 30; //300000; // 5 minutes in milliseconds
 
-    private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
-    private static final String EVENTLOG_FILE = new File("authentication/src/main/java/server/eventlogs").getAbsolutePath();
+    private static final String ACCESS_CONTROL = new File("access control task 2/src/main/java/server/AccessControl.csv").getAbsolutePath();
+    private static final String PASSWORD_FILE = new File("access control task 2/src/main/java/server/passwords.csv").getAbsolutePath();
+    private static final String EVENTLOG_FILE = new File("access control task 2/src/main/java/server/eventlogs").getAbsolutePath();
 
     private static final Logger logger = Logger.getLogger(Servant.class.getName());
 
@@ -52,6 +53,18 @@ public class Servant extends UnicastRemoteObject implements Service {
         initializeRolePermissions();
     }
 
+    // Session creation
+    public String login(String username, String password) throws RemoteException {
+        if (authenticate(username, password)) {
+            long expirationTime = System.currentTimeMillis() + SESSION_DURATION;
+            activeSessions.put(username, expirationTime);
+            logger.info("User " + username + " logged in with session valid until: " + expirationTime);
+            return "Login successful. Session active.";
+        }
+        logger.warning("Login failed for user: " + username);
+        return "Login failed. Invalid credentials.";
+    }
+
     private void initializeUsers() {
         // Initialize users with roles and passwords
         userPasswordMap.put("AliceAdmin", "adminpass");
@@ -63,17 +76,17 @@ public class Servant extends UnicastRemoteObject implements Service {
         userPasswordMap.put("CeciliaPowerUser", "powerpass");
         userRoleMap.put("CeciliaPowerUser", Role.POWER_USER);
 
-        userPasswordMap.put("David", "davidpass");
-        userRoleMap.put("David", Role.ORDINARY_USER);
+        userPasswordMap.put("DavidUser", "secretpassword");
+        userRoleMap.put("DavidUser", Role.ORDINARY_USER);
 
-        userPasswordMap.put("Erica", "ericapass");
-        userRoleMap.put("Erica", Role.ORDINARY_USER);
+        userPasswordMap.put("EricaUser", "pasword1234");
+        userRoleMap.put("EricaUser", Role.ORDINARY_USER);
 
-        userPasswordMap.put("Fred", "fredpass");
-        userRoleMap.put("Fred", Role.ORDINARY_USER);
+        userPasswordMap.put("FredUser", "1234567654321");
+        userRoleMap.put("FredUser", Role.ORDINARY_USER);
 
-        userPasswordMap.put("George", "georgepass");
-        userRoleMap.put("George", Role.ORDINARY_USER);
+        userPasswordMap.put("GeorgeUser", "georgian");
+        userRoleMap.put("GeorgeUser", Role.ORDINARY_USER);
     }
 
     private void initializeRolePermissions() {
@@ -130,6 +143,31 @@ public class Servant extends UnicastRemoteObject implements Service {
         return passwordHash.equals(userInfo[1]);
     }
 
+    private String[] getUserInfo(String username) {
+        BufferedReader reader = null;
+        String line = "";
+
+        try {
+            reader = new BufferedReader(new FileReader(Servant.PASSWORD_FILE));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while ((line = reader.readLine()) != null) {
+                String[] user = line.split(",");
+
+                if (user[0].equals(username)) {
+                    return user;
+                }
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     private boolean hasPermission(String username, String action) {
         Role userRole = userRoleMap.get(username);
         if (userRole != null) {
@@ -138,9 +176,81 @@ public class Servant extends UnicastRemoteObject implements Service {
         return false;
     }
 
+    // Session validation check
+    private boolean isSessionValid(String username) {
+        if (activeSessions.containsKey(username)) {
+            long currentTime = System.currentTimeMillis();
+            long expirationTime = activeSessions.get(username);
+            if (currentTime < expirationTime) {
+                // Extend session validity upon valid use
+                activeSessions.put(username, currentTime + SESSION_DURATION);
+                logger.info("Session extended for user: " + username);
+                return true;
+            } else {
+                activeSessions.remove(username); // Invalidate session
+                logger.info("Session expired for user: " + username);
+            }
+        }
+        return false;
+    }
+
+    private String getAccessRights(String username) {
+        BufferedReader br = null;
+        String line = "";
+
+        try {
+            br = new BufferedReader(new FileReader(Servant.ACCESS_CONTROL));
+        }
+        catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while ((line = br.readLine()) != null) {
+                String[] check = line.split(",");
+
+                if (check[0].equals(username)) {
+                    return check[1];
+                }
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+     // Helper method to enforce session check
+     private boolean validateSession(String username, String operation) throws RemoteException {
+        if (!isSessionValid(username)) {
+            logger.warning("Unauthorized access attempt by user: " + username + ", Session invalid");
+            throw new RemoteException("Session is not valid. Please log in again.");
+        }
+        // else if (!validateAccess(username, operation)) {
+        //     logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + operation);
+        //     return false;
+        // }
+        return true;
+    }
+
+    private boolean validateAccess(String username, String operation) throws RemoteException {
+        String rights = getAccessRights(username);
+        if (rights.equals("all")) {
+            return true;
+        }
+
+        String[] rightsArr = rights.split(":");
+        for (String r : rightsArr) {
+            if (r.equals(operation)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     @Override
     public String print(String username, String fileName, String printer) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "print")) {
+        if (validateSession(username, "print") && hasPermission(username, "print")) {
             logger.info("Print command received. User: " + username + ", File: " + fileName + ", Printer: " + printer);
             return "Printing " + fileName + " on " + printer;
         }
@@ -149,7 +259,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String queue(String username, String printer) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "queue")) {
+        if (validateSession(username, "queue") && hasPermission(username, "queue")) {
             logger.info("Queue command received. User: " + username + ", Printer: " + printer);
             return "Queue for printer " + printer + ": [Sample Job List]";
         }
@@ -158,7 +268,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String topQueue(String username, String printer, int job) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "topQueue")) {
+        if (validateSession(username, "topQueue") && hasPermission(username, "topQueue")) {
             logger.info("Top queue command received. User: " + username + ", Printer: " + printer + ", Job: " + job);
             return "Moved job " + job + " to the top of the queue for printer " + printer;
         }
@@ -167,7 +277,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String start(String username) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "start")) {
+        if (validateSession(username, "start") && hasPermission(username, "start")) {
             logger.info("Start command received. User: " + username);
             return "Print server started.";
         }
@@ -176,7 +286,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String stop(String username) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "stop")) {
+        if (validateSession(username, "stop") && hasPermission(username, "stop")) {
             logger.info("Stop command received. User: " + username);
             return "Print server stopped.";
         }
@@ -185,7 +295,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String restart(String username) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "restart")) {
+        if (validateSession(username, "restart") && hasPermission(username, "restart")) {
             logger.info("Restart command received. User: " + username);
             return "Print server restarted.";
         }
@@ -194,7 +304,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String status(String username, String printer) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "status")) {
+        if (validateSession(username, "status") && hasPermission(username, "status")) {
             logger.info("Status command received. User: " + username + ", Printer: " + printer);
             return "Status of printer " + printer + ": [Sample status]";
         }
@@ -203,7 +313,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String readConfig(String username, String parameter) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "readConfig")) {
+        if (validateSession(username, "readConfig") && hasPermission(username, "readConfig")) {
             logger.info("Read configuration command received. User: " + username + ", Parameter: " + parameter);
             return "Configuration for " + parameter + ": [Sample value]";
         }
@@ -212,7 +322,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String setConfig(String username, String parameter, String value) throws RemoteException {
-        if (validateSession(username) && hasPermission(username, "setConfig")) {
+        if (validateSession(username, "setConfig") && hasPermission(username, "setConfig")) {
             logger.info("Set configuration command received. User: " + username + ", Parameter: " + parameter + ", Value: " + value);
             return "Set configuration parameter " + parameter + " to " + value;
         }

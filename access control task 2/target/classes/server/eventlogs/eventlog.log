@@ -1,0 +1,42 @@
+nov. 20, 2024 2:11:09 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:11:58 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732108618254
+nov. 20, 2024 2:12:08 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 2:15:21 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:17:03 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732108923562
+nov. 20, 2024 2:17:16 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 2:20:36 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:21:28 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732109188766
+nov. 20, 2024 2:21:54 PM server.Servant isSessionValid
+INFO: Session extended for user: AliceAdmin
+nov. 20, 2024 2:21:54 PM server.Servant print
+INFO: Print command received. User: AliceAdmin, File: cool.txt, Printer: coolprinter
+nov. 20, 2024 2:22:03 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:22:16 PM server.Servant login
+WARNING: Login failed for user: David
+nov. 20, 2024 2:26:06 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:26:18 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732109478113
+nov. 20, 2024 2:26:27 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 2:26:42 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+nov. 20, 2024 2:27:53 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:28:03 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732109283478
+nov. 20, 2024 2:30:35 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+nov. 20, 2024 2:30:35 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 2:31:01 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
