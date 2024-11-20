@@ -40,3 +40,5 @@ nov. 20, 2024 2:30:35 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
 nov. 20, 2024 2:31:01 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: AliceAdmin, Session invalid
+nov. 20, 2024 2:55:45 PM server.Servant configureLogger
+INFO: Logger configuration complete.
