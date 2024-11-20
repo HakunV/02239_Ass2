@@ -4,3 +4,27 @@ nov. 18, 2024 1:05:37 PM server.Servant configureLogger
 INFO: Logger configuration complete.
 nov. 18, 2024 1:05:52 PM server.Servant login
 WARNING: Login failed for user: EricaUser
+nov. 20, 2024 2:39:27 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:40:14 PM server.Servant login
+WARNING: Login failed for user: AliceAdmin
+nov. 20, 2024 2:40:20 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:40:47 PM server.Servant login
+INFO: User user1 logged in with session valid until: 1732110347650
+nov. 20, 2024 2:40:53 PM server.Servant isSessionValid
+INFO: Session extended for user: user1
+nov. 20, 2024 2:40:53 PM server.Servant print
+INFO: Print command received. User: user1, File: sfds, Printer: fasfaf
+nov. 20, 2024 2:41:15 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:41:24 PM server.Servant login
+INFO: User user1 logged in with session valid until: 1732110084362
+nov. 20, 2024 2:43:08 PM server.Servant isSessionValid
+INFO: Session expired for user: user1
+nov. 20, 2024 2:43:08 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: user1
+nov. 20, 2024 2:43:22 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: user1
+nov. 20, 2024 2:43:36 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: user1
