@@ -46,3 +46,7 @@ nov. 18, 2024 2:29:37 PM server.Servant isSessionValid
 INFO: Session extended for user: EricaUser
 nov. 18, 2024 2:29:37 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: EricaUser, Tried to run: stop
+nov. 20, 2024 1:58:58 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 20, 2024 2:57:31 PM server.Servant configureLogger
+INFO: Logger configuration complete.
