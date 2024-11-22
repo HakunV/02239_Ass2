@@ -124,7 +124,6 @@ public class Servant extends UnicastRemoteObject implements Service {
                     return user;
                 }
             }
-
             reader.close();
         }
         catch (IOException e) {
@@ -157,30 +156,8 @@ public class Servant extends UnicastRemoteObject implements Service {
     }
 
     private String getUserRole(String username) {
-        BufferedReader reader = null;
-        String line = "";
-
-        try {
-            reader = new BufferedReader(new FileReader(Servant.PASSWORD_FILE));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        try {
-            while((line = reader.readLine()) != null) {
-                String[] user = line.split(",");
-
-                if (user[0].equals(username)) {
-                    reader.close();
-                    return user[3];
-                }
-            }
-
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+        String[] user = getUserInfo(username);
+        return user[3];
     }
 
     private String[] getRolePermissions(String role) {
@@ -202,7 +179,6 @@ public class Servant extends UnicastRemoteObject implements Service {
                     return roleInfo[1].split(":");
                 }
             }
-
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
