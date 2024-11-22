@@ -32,7 +32,7 @@ import java.security.SecureRandom;
 
 public class Servant extends UnicastRemoteObject implements Service {
     //private Map<String, String> userPasswordMap;
-    private Map<String, String> UserRoleMap;
+    private Map<String, String> EmployeeMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private Map<String, Map<String, Boolean>> RoleMap;
     private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
@@ -47,7 +47,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
         configureLogger();
         //userPasswordMap = new HashMap<>();
-        UserRoleMap = new HashMap<>();
+        EmployeeMap = new HashMap<>();
         activeSessions = new HashMap<>();
         RoleMap = new HashMap<>();
         
@@ -107,6 +107,20 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     }
 
+    private boolean hasPerm(String Username, String Perm)
+    {
+        if(EmployeeMap.containsKey(Username))
+        {
+            String Role = EmployeeMap.get(Username);
+            if(RoleMap.containsKey(Role))
+            {
+                return RoleMap.get(Role).get(Perm);
+            }
+        }
+        
+        return false;
+    }
+
     private void mapUsers() throws FileNotFoundException, IOException
     {
         String[] FirstLine = {"username", "role"};
@@ -129,7 +143,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
             if(!Arrays.equals(UserRolePair, FirstLine))
             {
-                UserRoleMap.put(UserRolePair[0], UserRolePair[1]);
+                EmployeeMap.put(UserRolePair[0], UserRolePair[1]);
                 logger.info("Read user: " + UserRolePair[0] + " with role: " + UserRolePair[1]);
             }
         }
@@ -340,7 +354,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String print(String username, String fileName, String printer) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "print")) {
             logger.info("Print command received. User: " + username + ", File: " + fileName + ", Printer: " + printer);
             return "Printing " + fileName + " on " + printer;
         }
@@ -349,7 +363,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String queue(String username, String printer) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "queue")) {
             logger.info("Queue command received. User: " + username + ", Printer: " + printer);
             return "Queue for printer " + printer + ": [Sample Job List]";
         }
@@ -358,7 +372,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String topQueue(String username, String printer, int job) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "topqueue")) {
             logger.info("Top queue command received. User: " + username + ", Printer: " + printer + ", Job: " + job);
             return "Moved job " + job + " to the top of the queue for printer " + printer;
         }
@@ -367,7 +381,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String start(String username) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "start")) {
             logger.info("Start command received. User: " + username);
             return "Print server started.";
         }
@@ -376,7 +390,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String stop(String username) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "stop")) {
             logger.info("Stop command received. User: " + username);
             return "Print server stopped.";
         }
@@ -385,7 +399,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String restart(String username) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "restart")) {
             logger.info("Restart command received. User: " + username);
             return "Print server restarted.";
         }
@@ -394,7 +408,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String status(String username, String printer) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "status")) {
             logger.info("Status command received. User: " + username + ", Printer: " + printer);
             return "Status of printer " + printer + ": [Sample status]";
         }
@@ -403,7 +417,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String readConfig(String username, String parameter) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "readconfig")) {
             logger.info("Read configuration command received. User: " + username + ", Parameter: " + parameter);
             return "Configuration for " + parameter + ": [Sample value]";
         }
@@ -412,7 +426,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
     @Override
     public String setConfig(String username, String parameter, String value) throws RemoteException {
-        if (validateSession(username)) {
+        if (validateSession(username) && hasPerm(username, "setconfig")) {
             logger.info("Set configuration command received. User: " + username + ", Parameter: " + parameter + ", Value: " + value);
             return "Set configuration parameter " + parameter + " to " + value;
         }

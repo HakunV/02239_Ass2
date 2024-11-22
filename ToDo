@@ -21,6 +21,7 @@ The third task is to develop a second prototype, based on the prototype develope
 
 Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
 
+## Task 3 progress: Role perms finished, need to make the code allow deny access to a function based on the role
 
 The final task is to implement the necessary changes in the access control policy specifications of the two prototypes developed in this lab, so that they reflect the organisational changes in the company. The experience gained from these modifications will allow you to compare the management support for the two policy enforcement mechanisms, i.e. the flexibility and facility with which organisational changes can be reflected in the access control policy. This comparison must highlight the strengths and weaknesses of each implementation and discuss the expressive power and the ease of management supported by the two policy specification abstractions, e.g., which organisational changes are easily captured in both implementations and which are more easily specified in one implementation than in the other.
 Report
