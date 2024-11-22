@@ -146,3 +146,37 @@ Nov 22, 2024 4:47:47 PM server.Servant isSessionValid
 INFO: Session extended for user: IdaUser
 Nov 22, 2024 4:47:47 PM server.Servant topQueue
 INFO: Top queue command received. User: IdaUser, Printer: ew, Job: 23
+Nov 22, 2024 9:50:19 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:50:28 PM server.Servant login
+INFO: User BobJanitor logged in with session valid until: 1732308928668
+Nov 22, 2024 9:50:39 PM server.Servant isSessionValid
+INFO: Session extended for user: BobJanitor
+Nov 22, 2024 9:50:39 PM server.Servant setConfig
+INFO: Set configuration command received. User: BobJanitor, Parameter: time, Value: 13
+Nov 22, 2024 9:50:50 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:51:01 PM server.Servant login
+INFO: User GeorgeUser logged in with session valid until: 1732308961468
+Nov 22, 2024 9:51:14 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 9:51:14 PM server.Servant print
+INFO: Print command received. User: GeorgeUser, File: cooler.txt, Printer: coolerprinter
+Nov 22, 2024 9:51:22 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 9:51:22 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: GeorgeUser, Tried to run function: readConfig
+Nov 22, 2024 10:00:18 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:00:33 PM server.Servant login
+WARNING: Login failed for user: BobJanitor
+Nov 22, 2024 10:00:46 PM server.Servant login
+INFO: User GeorgeUser logged in with session valid until: 1732309546878
+Nov 22, 2024 10:00:57 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 10:00:57 PM server.Servant readConfig
+INFO: Read configuration command received. User: GeorgeUser, Parameter: time
+Nov 22, 2024 10:01:08 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:01:17 PM server.Servant login
+INFO: User HenryUser logged in with session valid until: 1732309577363

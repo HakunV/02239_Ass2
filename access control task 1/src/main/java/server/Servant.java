@@ -23,6 +23,20 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.Security;
 import java.security.SecureRandom;
 
+// AccessControl.csv before:
+
+// User,Operations
+// AliceAdmin,all
+// CeciliaPowerUser,print:restart:queue:topQueue
+// BobJanitor,print:start:stop:restart:queue:topQueue:status:readConfig:setConfig
+// DavidUser,print:queue
+// EricaUser,print:queue
+// FredUser,print:queue
+// GeorgeUser,print:queue
+
+
+// Users and passwords, after changes
+
 //  Alice, George and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
 
 // AliceAdmin, adminpass // Admin can do everything
