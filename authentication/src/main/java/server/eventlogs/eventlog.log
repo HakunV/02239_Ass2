@@ -28,3 +28,39 @@ nov. 20, 2024 2:43:22 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: user1
 nov. 20, 2024 2:43:36 PM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: user1
+nov. 22, 2024 2:31:46 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:31:48 AM server.Servant login
+WARNING: Login failed for user: ewfwf
+nov. 22, 2024 2:32:22 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:32:24 AM server.Servant login
+WARNING: Login failed for user: wefwef
+nov. 22, 2024 2:33:00 AM server.Servant login
+INFO: User user1 logged in with session valid until: 1732239480524
+nov. 22, 2024 2:33:04 AM server.Servant isSessionValid
+INFO: Session extended for user: user1
+nov. 22, 2024 2:33:04 AM server.Servant print
+INFO: Print command received. User: user1, File: wewe, Printer: wewr
+nov. 22, 2024 2:33:10 AM server.Servant isSessionValid
+INFO: Session extended for user: user1
+nov. 22, 2024 2:33:10 AM server.Servant stop
+INFO: Stop command received. User: user1
+nov. 22, 2024 2:33:25 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:33:31 AM server.Servant login
+INFO: User user1 logged in with session valid until: 1732239211705
+nov. 22, 2024 2:33:36 AM server.Servant isSessionValid
+INFO: Session expired for user: user1
+nov. 22, 2024 2:33:36 AM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: user1
+nov. 22, 2024 2:33:43 AM server.Servant login
+WARNING: Login failed for user: admindas
+nov. 22, 2024 2:33:53 AM server.Servant login
+INFO: User admin logged in with session valid until: 1732239233849
+nov. 22, 2024 2:33:56 AM server.Servant isSessionValid
+INFO: Session expired for user: admin
+nov. 22, 2024 2:33:56 AM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: admin
+nov. 22, 2024 2:34:07 AM server.Servant login
+INFO: User admin logged in with session valid until: 1732239247655

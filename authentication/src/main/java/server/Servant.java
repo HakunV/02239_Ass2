@@ -23,25 +23,23 @@ import java.security.Security;
 import java.security.SecureRandom;
 import java.security.NoSuchAlgorithmException;
 
+// user1, password123
+// admin, adminpass
+
 public class Servant extends UnicastRemoteObject implements Service {
-    private Map<String, String> userPasswordMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
-    private static final long SESSION_DURATION = 30; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
 
     private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
     private static final String EVENTLOG_FILE = new File("authentication/src/main/java/server/eventlogs").getAbsolutePath();
 
+    private static final Logger logger = Logger.getLogger(Servant.class.getName());
+
     public Servant() throws RemoteException {
         super();
         configureLogger();
-        userPasswordMap = new HashMap<>();
         activeSessions = new HashMap<>();
-        
-        // Sample user setup (In real applications, this should be securely loaded)
-        userPasswordMap.put("user1", "password123");
-        userPasswordMap.put("admin", "adminpass");
     }
-   private static final Logger logger = Logger.getLogger(Servant.class.getName());
 
     private void configureLogger() {
         try {
@@ -91,7 +89,6 @@ public class Servant extends UnicastRemoteObject implements Service {
         }
     }
 
-
     private String[] getUserInfo(String username) {
         BufferedReader reader = null;
         String line = "";
@@ -128,22 +125,6 @@ public class Servant extends UnicastRemoteObject implements Service {
         String userHash = hash_Argon2(userInfo[0], userInfo[2]);
         String passwordHash = hash_Argon2(password, userHash);
 
-        // System.out.println("Username: " + username);
-
-        // String salt = getRandomSalt();
-        // System.out.println("Salt: " + salt);
-
-        // String userHash = hash_Argon2(username, salt);
-
-        // String passwordHash = hash_Argon2(password, userHash);
-        // System.out.println("Password Hash: " + passwordHash);
-
-        // try {
-        //     Thread.sleep(10000);
-        // } catch (InterruptedException e) {
-        //     e.printStackTrace();
-        // }
-
         if (passwordHash.equals(userInfo[1])) {
             return true;
         }
@@ -159,7 +140,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Login successful. Session active.";
         }
         logger.warning("Login failed for user: " + username);
-        return "Login failed. Invalid credentials.";
+        return "Login failed. Invalid credentials.\nWait 5 seconds to try again.";
     }
 
     // Session validation check
