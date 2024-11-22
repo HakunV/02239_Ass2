@@ -50,3 +50,41 @@ nov. 20, 2024 1:58:58 PM server.Servant configureLogger
 INFO: Logger configuration complete.
 nov. 20, 2024 2:57:31 PM server.Servant configureLogger
 INFO: Logger configuration complete.
+nov. 22, 2024 1:59:13 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 1:59:38 AM server.Servant login
+WARNING: Login failed for user: EricaUser
+nov. 22, 2024 1:59:53 AM server.Servant login
+INFO: User EricaUser logged in with session valid until: 1732237493555
+nov. 22, 2024 2:00:00 AM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+nov. 22, 2024 2:00:00 AM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: EricaUser, Tried to run function: restart
+nov. 22, 2024 2:01:57 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:02:07 AM server.Servant login
+INFO: User EricaUser logged in with session valid until: 1732237627003
+nov. 22, 2024 2:02:27 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:02:35 AM server.Servant login
+INFO: User EricaUser logged in with session valid until: 1732237355686
+nov. 22, 2024 2:02:38 AM server.Servant isSessionValid
+INFO: Session expired for user: EricaUser
+nov. 22, 2024 2:02:38 AM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: EricaUser, Session invalid
+nov. 22, 2024 2:02:48 AM server.Servant login
+WARNING: Login failed for user: EricaUser
+nov. 22, 2024 2:03:05 AM server.Servant login
+WARNING: Login failed for user: EricaUser
+nov. 22, 2024 2:05:42 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+nov. 22, 2024 2:05:48 AM server.Servant login
+WARNING: Login failed for user: EricaUser
+nov. 22, 2024 2:05:59 AM server.Servant login
+INFO: User EricaUser logged in with session valid until: 1732237559972
+nov. 22, 2024 2:06:04 AM server.Servant isSessionValid
+INFO: Session expired for user: EricaUser
+nov. 22, 2024 2:06:04 AM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: EricaUser, Session invalid
+nov. 22, 2024 2:06:19 AM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732237579161

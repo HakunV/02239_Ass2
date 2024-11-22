@@ -14,16 +14,14 @@ public class Client {
     public static Service service;
     private static String username;
 
+    private static boolean clientActive = true;
+
     public static void client(String[] args) throws MalformedURLException, RemoteException, NotBoundException {
         service = (Service) Naming.lookup("rmi://localhost:6969/Printer");
         sc = new Scanner(System.in);
 
-        if (!login()) {
-            System.out.println("Login failed. Exiting program.");
-            return;
-        }
+        tryLogin();
 
-        boolean clientActive = true;
         while (clientActive) {
             clearConsole();
             printOptions();
@@ -57,12 +55,21 @@ public class Client {
                 case "setconfig":
                     setConfig();
                     break;
+                case "exit":
+                    shutdown();
+                    break;
                 default:
                     wrongInput();
                     break;
             }
         }
         sc.close();
+    }
+
+    private static void tryLogin() {
+        while (!login()) {
+            waitFor(5000);
+        }
     }
 
     private static boolean login() {
@@ -74,6 +81,7 @@ public class Client {
 
         try {
             String response = service.login(username, password);
+            clearConsole();
             System.out.println(response);
             return response.toLowerCase().contains("successful");
         } catch (RemoteException e) {
@@ -94,10 +102,12 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.setConfig(username, param, val));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void readConfig() {
@@ -108,10 +118,12 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.readConfig(username, param));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void status() {
@@ -122,40 +134,48 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.status(username, printer));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void restart() {
         clearConsole();
         try {
             System.out.println("--- " + service.restart(username));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void stop() {
         clearConsole();
         try {
             System.out.println("--- " + service.stop(username));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void start() {
         clearConsole();
         try {
             System.out.println("--- " + service.start(username));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void topQueue() {
@@ -171,10 +191,12 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.topQueue(username, printer, job));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void queue() {
@@ -185,10 +207,12 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.queue(username, printer));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void print() {
@@ -203,10 +227,12 @@ public class Client {
         clearConsole();
         try {
             System.out.println("--- " + service.print(username, name, printer));
+            waitFor(2000);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            waitFor(3000);
+            tryLogin();
         }
-        waitFor(2000);
     }
 
     private static void wrongInput() {
@@ -244,5 +270,11 @@ public class Client {
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void shutdown() {
+        System.out.println("\nExiting...");
+
+        clientActive = false;
     }
 }

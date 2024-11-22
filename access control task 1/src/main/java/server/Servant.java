@@ -23,40 +23,34 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.Security;
 import java.security.SecureRandom;
 
-// AliceAdmin, adminpass
-// BobJanitor, servicepass
-// CeciliaPowerUser, powerpass
+//  Alice, Bob and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
+
+// AliceAdmin, adminpass // Admin can do everything
+// BobJanitor, servicepass // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
+// CeciliaPowerUser, powerpass // Power user can invoke print, queue, topQueue, start, stop, and restart operations
+
+//  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
+
 // DavidUser, secretpassword
 // EricaUser, pasword1234
 // FredUser, 1234567654321
 // GeorgeUser, georgian
 
 public class Servant extends UnicastRemoteObject implements Service {
-    private Map<String, String> userPasswordMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
-    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 30; // 5 minutes in milliseconds
 
     private static final String ACCESS_CONTROL = new File("access control task 1/src/main/java/server/AccessControl.csv").getAbsolutePath();
     private static final String PASSWORD_FILE = new File("access control task 1/src/main/java/server/passwords.csv").getAbsolutePath();
     private static final String EVENTLOG_FILE = new File("access control task 1/src/main/java/server/eventlogs").getAbsolutePath();
 
+    private static final Logger logger = Logger.getLogger(Servant.class.getName());
+
     public Servant() throws RemoteException {
         super();
         configureLogger();
-        userPasswordMap = new HashMap<>();
         activeSessions = new HashMap<>();
-        
-        //  Alice, Bob and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
-        userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
-        userPasswordMap.put("BobJanitor", "servicepass"); // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
-        userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
-        //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
-        userPasswordMap.put("David", "secretpassword");
-        userPasswordMap.put("Erica", "pasword1234");
-        userPasswordMap.put("Fred", "1234567654321");
-        userPasswordMap.put("George", "georgian");
     }
-    private static final Logger logger = Logger.getLogger(Servant.class.getName());
 
     private void configureLogger() {
         try {
@@ -122,9 +116,11 @@ public class Servant extends UnicastRemoteObject implements Service {
                 String[] user = line.split(",");
 
                 if (user[0].equals(username)) {
+                    reader.close();
                     return user;
                 }
             }
+            reader.close();
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -158,7 +154,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Login successful. Session active.";
         }
         logger.warning("Login failed for user: " + username);
-        return "Login failed. Invalid credentials.";
+        return "Login failed. Invalid credentials.\nWait 5 seconds to try again";
     }
 
     // Session validation check
@@ -223,9 +219,11 @@ public class Servant extends UnicastRemoteObject implements Service {
                 String[] check = line.split(",");
 
                 if (check[0].equals(username)) {
+                    br.close();
                     return check[1];
                 }
             }
+            br.close();
         }
         catch (IOException e) {
             e.printStackTrace();
