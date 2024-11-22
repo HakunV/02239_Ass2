@@ -1,0 +1,5 @@
+roles,perm
+admin,111111111
+tech,000111111
+poweruser,111001000
+user,110000000

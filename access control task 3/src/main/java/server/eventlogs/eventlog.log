@@ -1,0 +1,497 @@
+Nov 22, 2024 8:45:31 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 8:45:37 AM server.Servant login
+WARNING: Login failed for user: AliceAdmin
+Nov 22, 2024 8:47:25 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 8:47:36 AM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732261956179
+Nov 22, 2024 9:17:51 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:18:26 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:19:54 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:25:52 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:31:16 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:31:16 AM server.Servant <init>
+WARNING: File roles_perms.csv does not exist or is empty
+Nov 22, 2024 9:31:50 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:31:50 AM server.Servant <init>
+WARNING: File roles_perms.csv does not exist or is empty
+Nov 22, 2024 9:32:09 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:32:17 AM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732264637340
+Nov 22, 2024 9:34:33 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:35:02 AM server.Servant login
+WARNING: Login failed for user: Hacker
+Nov 22, 2024 9:36:50 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:37:05 AM server.Servant login
+WARNING: Login failed for user: DavidUser
+Nov 22, 2024 9:37:10 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:37:14 AM server.Servant login
+WARNING: Login failed for user: David
+Nov 22, 2024 9:37:25 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:37:33 AM server.Servant login
+WARNING: Login failed for user: DavidUser
+Nov 22, 2024 9:40:39 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:40:47 AM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732265147772
+Nov 22, 2024 9:40:50 AM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 9:40:50 AM server.Servant restart
+INFO: Restart command received. User: DavidUser
+Nov 22, 2024 10:18:25 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdminwith role: admin
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ceciliawith role: poweruser
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ericawith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Georgewith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdminwith role: admin
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ceciliawith role: poweruser
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ericawith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Georgewith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdminwith role: admin
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ceciliawith role: poweruser
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ericawith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Georgewith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdminwith role: admin
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ceciliawith role: poweruser
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Ericawith role: user
+Nov 22, 2024 10:18:25 AM server.Servant mapUsers
+INFO: Read user: Georgewith role: user
+Nov 22, 2024 10:18:47 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:47 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:51 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:18:52 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:21:25 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:21:25 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:22:04 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:22:04 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 10:25:28 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 10:25:28 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 11:18:18 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 11:18:18 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 11:19:10 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 11:19:10 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	print	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	queue	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	topqueue	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	start	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	stop	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	restart	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	status	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	readconfig	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	setconfig	+	true
+Nov 22, 2024 11:19:10 AM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	print	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	queue	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	topqueue	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	start	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	stop	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	restart	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	status	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	readconfig	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	setconfig	+	true
+Nov 22, 2024 11:19:10 AM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	print	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	queue	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	topqueue	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	start	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	stop	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	restart	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	status	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	readconfig	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	setconfig	+	false
+Nov 22, 2024 11:19:10 AM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	print	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	queue	+	true
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	topqueue	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	start	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	stop	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	restart	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	status	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	readconfig	+	false
+Nov 22, 2024 11:19:10 AM server.Servant permMapper
+INFO: 	setconfig	+	false
+Nov 22, 2024 11:19:10 AM server.Servant mapRoles
+INFO: Read role: user with perms: 
+
+
+
+Nov 22, 2024 11:21:03 AM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: Cecilia with role: poweruser
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: David with role: user
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: Erica with role: user
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: Fred with role: user
+Nov 22, 2024 11:21:03 AM server.Servant mapUsers
+INFO: Read user: George with role: user
+Nov 22, 2024 11:21:03 AM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 11:21:03 AM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 11:21:03 AM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 11:21:03 AM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 11:21:03 AM server.Servant permMapper
+INFO: 	setconfig	:	false

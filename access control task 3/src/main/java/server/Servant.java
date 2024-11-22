@@ -4,17 +4,25 @@ import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.SimpleFormatter;
 
+import javax.swing.filechooser.FileNameExtensionFilter;
+
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.file.*;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.StringTokenizer;
 import java.util.logging.Logger;
+import java.util.Arrays;
 
 import org.bouncycastle.crypto.generators.Argon2BytesGenerator;
 import org.bouncycastle.crypto.params.Argon2Parameters;
@@ -23,34 +31,182 @@ import java.security.Security;
 import java.security.SecureRandom;
 
 public class Servant extends UnicastRemoteObject implements Service {
-    private Map<String, String> userPasswordMap;
+    //private Map<String, String> userPasswordMap;
+    private Map<String, String> UserRoleMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
+    private Map<String, Map<String, Boolean>> RoleMap;
     private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
-
-    private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
-    private static final String EVENTLOG_FILE = new File("authentication/src/main/java/server/eventlogs").getAbsolutePath();
+    private static final String MAIN_FOLDER = "access control task 3\\src\\main\\java\\server\\";
+    private static final String EMPLOYEES_FILE = new File(MAIN_FOLDER + "employees.csv").getAbsolutePath();
+    private static final String ROLEPERM_FILE = new File(MAIN_FOLDER + "roles_perms.csv").getAbsolutePath();
+    private static final String PASSWORD_FILE = new File(MAIN_FOLDER + "passwords.csv").getAbsolutePath();
+    private static final String EVENTLOG_FILE = new File(MAIN_FOLDER + "eventlogs").getAbsolutePath();
 
     public Servant() throws RemoteException {
         super();
+
         configureLogger();
-        userPasswordMap = new HashMap<>();
+        //userPasswordMap = new HashMap<>();
+        UserRoleMap = new HashMap<>();
         activeSessions = new HashMap<>();
+        RoleMap = new HashMap<>();
+        
+        //Array to store the filepaths to be used in folowing for loop
+        String[] FilepathArr = {EMPLOYEES_FILE, ROLEPERM_FILE, PASSWORD_FILE, EVENTLOG_FILE};
 
-        // Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
-        userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
-        userPasswordMap.put("George", "servicepass"); 
-        userPasswordMap.put("Ida", "IDApowerpass"); // Ida
-        userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
-        //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
-        userPasswordMap.put("David", "davidpass");
-        userPasswordMap.put("Erica", "ericapass");
-        userPasswordMap.put("Fred", "fredpass");
-        userPasswordMap.put("Henry", "henrypass"); // Henry
+        //Iterates over the array above to check whether each file actually exists
+        //And that the files aren't empty (event logs file is allowed to be empty)
+        for (String Filepath : FilepathArr) 
+        {
+            int index = Filepath.lastIndexOf("\\");
+            String FileName = Filepath.substring(index + 1);
+            try
+            {
+                if (!fileChecker(Filepath))
+                {
+                    throw new FileNotFoundException("File " + FileName + " does not exist or is empty");
+                }
+            }
 
-
+            catch(FileNotFoundException FNFE)
+            {
+                System.out.println(FNFE.getMessage());
+                if(!Filepath.contains(EVENTLOG_FILE))
+                {
+                    logger.warning(FNFE.getMessage());
+                }
+                System.exit(404);
+            }
+        }
+        
+        try
+        {
+            mapUsers();
+            mapRoles();
+        }
+        catch(FileNotFoundException FNFE)
+        {
+            FNFE.printStackTrace();
+        }
+        catch(IOException IOE)
+        {
+            IOE.printStackTrace();
+        }
+        /*
+            // Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
+            userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
+            userPasswordMap.put("George", "servicepass"); 
+            userPasswordMap.put("Ida", "IDApowerpass"); // Ida
+            userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
+            //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
+            userPasswordMap.put("David", "davidpass");
+            userPasswordMap.put("Erica", "ericapass");
+            userPasswordMap.put("Fred", "fredpass");
+            userPasswordMap.put("Henry", "henrypass"); // Henry
+        */
 
     }
-   private static final Logger logger = Logger.getLogger(Servant.class.getName());
+
+    private void mapUsers() throws FileNotFoundException, IOException
+    {
+        String[] FirstLine = {"username", "role"};
+        BufferedReader BuffRead = new BufferedReader(new InputStreamReader(new FileInputStream(EMPLOYEES_FILE)));
+        while(true) 
+        {
+            StringTokenizer StrTkn;
+            try
+            {
+                StrTkn = new StringTokenizer((String) BuffRead.readLine(), ",");
+            }
+            catch(NullPointerException NPE)
+            {
+                break;
+            }
+
+            String[] UserRolePair = new String[2];
+            UserRolePair[0] = StrTkn.nextToken();
+            UserRolePair[1] = StrTkn.nextToken();
+
+            if(!Arrays.equals(UserRolePair, FirstLine))
+            {
+                UserRoleMap.put(UserRolePair[0], UserRolePair[1]);
+                logger.info("Read user: " + UserRolePair[0] + " with role: " + UserRolePair[1]);
+            }
+        }
+        BuffRead.close();
+    }
+    //print,queue,topqueue,start,stop,restart,status,readconfig,setconfig
+    private void mapRoles() throws FileNotFoundException, IOException
+    {
+        String[] FirstLine = {"roles","perm"};
+        BufferedReader BuffRead = new BufferedReader(new InputStreamReader(new FileInputStream(ROLEPERM_FILE)));
+        while(true) 
+        {
+            StringTokenizer StrTkn;
+            try
+            {
+                StrTkn = new StringTokenizer((String) BuffRead.readLine(), ",");
+            }
+            catch(NullPointerException NPE)
+            {
+                break;
+            }
+
+            String[] RolePermPair = new String[2];
+            RolePermPair[0] = StrTkn.nextToken();
+            RolePermPair[1] = StrTkn.nextToken();
+
+            if(!Arrays.equals(RolePermPair, FirstLine))
+            {
+                logger.info("Read role: " + RolePermPair[0] + " with perms: ");
+                RoleMap.put(RolePermPair[0], permMapper(RolePermPair[1].toCharArray()));
+                //UserRoleMap.put(RolePermPair[0], RolePermPair[1]);
+            }
+        }
+        BuffRead.close();
+    }
+
+    private Map<String, Boolean> permMapper(char[] permCharArr)
+    {
+        Map<String, Boolean> PermStatusMap = new HashMap<>();
+        String[] Perms = 
+        {
+            "print", 
+            "queue", 
+            "topqueue", 
+            "start", 
+            "stop", 
+            "restart", 
+            "status", 
+            "readconfig", 
+            "setconfig"
+        };
+        //boolean[] permBoolArr = new boolean[9];
+
+        for(int index = 0; index < 9; index++)
+        {
+            //permBoolArr[index] = permCharArr[index] == '1';
+            PermStatusMap.put(Perms[index], (permCharArr[index] == '1'));
+            logger.info('\t' + Perms[index] + "\t:\t" + (permCharArr[index] == '1'));
+        }
+
+        return PermStatusMap;
+    }
+
+    private boolean fileChecker(String Filepath)
+    {
+        File FileObj = new File(Filepath);
+        //int index = Filepath.lastIndexOf("\\");
+        //String FileName = Filepath.substring(index + 1);
+        if (!Filepath.contains(EVENTLOG_FILE))
+        {
+            return FileObj.exists() && FileObj.length() > 0;
+        }
+
+        return FileObj.exists();
+    }
+
+    private static final Logger logger = Logger.getLogger(Servant.class.getName());
 
     private void configureLogger() {
         try {

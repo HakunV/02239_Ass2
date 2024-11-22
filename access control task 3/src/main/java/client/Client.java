@@ -20,7 +20,7 @@ public class Client {
 
         if (!login()) {
             System.out.println("Login failed. Exiting program.");
-            return;
+            System.exit(1);
         }
 
         boolean clientActive = true;
