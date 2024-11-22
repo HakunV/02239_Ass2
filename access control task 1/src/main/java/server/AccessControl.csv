@@ -1,8 +1,9 @@
 User,Operations
 AliceAdmin,all
-BobJanitor,print:start:stop:restart:queue:topQueue:status:readConfig:setConfig
 CeciliaPowerUser,print:restart:queue:topQueue
 DavidUser,print:queue
 EricaUser,print:queue
 FredUser,print:queue
-GeorgeUser,print:queue
+GeorgeUser,print:start:stop:restart:queue:topQueue:status:readConfig:setConfig
+HenryUser,print:queue
+IdaUser,print:restart:queue:topQueue

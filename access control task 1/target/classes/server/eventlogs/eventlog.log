@@ -88,3 +88,61 @@ nov. 22, 2024 2:06:04 AM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: EricaUser, Session invalid
 nov. 22, 2024 2:06:19 AM server.Servant login
 INFO: User AliceAdmin logged in with session valid until: 1732237579161
+Nov 22, 2024 4:42:28 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:43:26 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:44:38 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:44:47 PM server.Servant login
+INFO: User HenryUser logged in with session valid until: 1732290287709
+Nov 22, 2024 4:44:51 PM server.Servant isSessionValid
+INFO: Session expired for user: HenryUser
+Nov 22, 2024 4:44:51 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: HenryUser, Session invalid
+Nov 22, 2024 4:45:05 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:45:13 PM server.Servant login
+WARNING: Login failed for user: HenryPass
+Nov 22, 2024 4:45:25 PM server.Servant login
+INFO: User HenryUser logged in with session valid until: 1732290625560
+Nov 22, 2024 4:45:28 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 4:45:28 PM server.Servant print
+INFO: Print command received. User: HenryUser, File: fewf, Printer: wefwf
+Nov 22, 2024 4:45:33 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 4:45:33 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: HenryUser, Tried to run function: start
+Nov 22, 2024 4:45:37 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 4:45:37 PM server.Servant queue
+INFO: Queue command received. User: HenryUser, Printer: asdfa
+Nov 22, 2024 4:45:45 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:46:04 PM server.Servant login
+INFO: User GeorgeUser logged in with session valid until: 1732290664534
+Nov 22, 2024 4:46:08 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 4:46:08 PM server.Servant print
+INFO: Print command received. User: GeorgeUser, File: saf, Printer: wefwe
+Nov 22, 2024 4:46:38 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 4:46:38 PM server.Servant setConfig
+INFO: Set configuration command received. User: GeorgeUser, Parameter: time, Value: 12
+Nov 22, 2024 4:47:20 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 4:47:28 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732290748507
+Nov 22, 2024 4:47:32 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 4:47:32 PM server.Servant print
+INFO: Print command received. User: IdaUser, File: wwf, Printer: wfew
+Nov 22, 2024 4:47:38 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 4:47:38 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: IdaUser, Tried to run function: readConfig
+Nov 22, 2024 4:47:47 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 4:47:47 PM server.Servant topQueue
+INFO: Top queue command received. User: IdaUser, Printer: ew, Job: 23

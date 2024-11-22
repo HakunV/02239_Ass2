@@ -23,22 +23,26 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.Security;
 import java.security.SecureRandom;
 
-//  Alice, Bob and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
+//  Alice, George and Cecilia are administrators, service technician and power user who are allowed to perform more operations.
 
 // AliceAdmin, adminpass // Admin can do everything
-// BobJanitor, servicepass // Janitor can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
-// CeciliaPowerUser, powerpass // Power user can invoke print, queue, topQueue, start, stop, and restart operations
+// GeorgeUser, georgian // Technician can invoke print, queue, topQueue, start, stop, restart, status, readConfig and setConfig operations
 
-//  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
+// Power user can invoke print, queue, topQueue, start, stop, and restart operations
+
+// CeciliaPowerUser, powerpass
+// IdaUser, IDApowerpass
+
+//  David, Erica, Fred and Henry are ordinary users who are only allowed to: print files and display the print queue.
 
 // DavidUser, secretpassword
 // EricaUser, pasword1234
 // FredUser, 1234567654321
-// GeorgeUser, georgian
+// HenryUser, henrypass
 
 public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
-    private static final long SESSION_DURATION = 30; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
 
     private static final String ACCESS_CONTROL = new File("access control task 1/src/main/java/server/AccessControl.csv").getAbsolutePath();
     private static final String PASSWORD_FILE = new File("access control task 1/src/main/java/server/passwords.csv").getAbsolutePath();
