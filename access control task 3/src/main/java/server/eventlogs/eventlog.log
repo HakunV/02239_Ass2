@@ -495,3 +495,107 @@ Nov 22, 2024 11:21:03 AM server.Servant permMapper
 INFO: 	readconfig	:	false
 Nov 22, 2024 11:21:03 AM server.Servant permMapper
 INFO: 	setconfig	:	false
+Nov 22, 2024 5:24:56 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:24:56 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: user
+Nov 22, 2024 5:24:56 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:24:56 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:24:56 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:24:56 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:24:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:25:57 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732292757523
+Nov 22, 2024 5:26:02 PM server.Servant isSessionValid
+INFO: Session expired for user: AliceAdmin
+Nov 22, 2024 5:26:02 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: AliceAdmin
+Nov 22, 2024 5:26:15 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732292775190

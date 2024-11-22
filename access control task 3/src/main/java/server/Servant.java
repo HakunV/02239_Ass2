@@ -35,7 +35,7 @@ public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, String> EmployeeMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private Map<String, Map<String, Boolean>> RoleMap;
-    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 30; // 5 minutes in milliseconds
     private static final String MAIN_FOLDER = "access control task 3\\src\\main\\java\\server\\";
     private static final String EMPLOYEES_FILE = new File(MAIN_FOLDER + "employees.csv").getAbsolutePath();
     private static final String ROLEPERM_FILE = new File(MAIN_FOLDER + "roles_perms.csv").getAbsolutePath();
@@ -95,14 +95,14 @@ public class Servant extends UnicastRemoteObject implements Service {
         /*
             // Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
             userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
-            userPasswordMap.put("George", "servicepass"); 
-            userPasswordMap.put("Ida", "IDApowerpass"); // Ida
+            userPasswordMap.put("GeorgeUser", "georgian"); 
+            userPasswordMap.put("IdaUser", "IDApowerpass"); // Ida
             userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
             //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
-            userPasswordMap.put("David", "davidpass");
-            userPasswordMap.put("Erica", "ericapass");
-            userPasswordMap.put("Fred", "fredpass");
-            userPasswordMap.put("Henry", "henrypass"); // Henry
+            userPasswordMap.put("DavidUser", "secretpassword");
+            userPasswordMap.put("EricaUser", "pasword1234");
+            userPasswordMap.put("FredUser", "1234567654321");
+            userPasswordMap.put("HenryUser", "henrypass"); // Henry
         */
 
     }
@@ -322,7 +322,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Login successful. Session active.";
         }
         logger.warning("Login failed for user: " + username);
-        return "Login failed. Invalid credentials.";
+        return "Login failed. Invalid credentials.\nWait 5 seconds to try again.";
     }
 
     // Session validation check
