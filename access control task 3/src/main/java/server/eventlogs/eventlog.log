@@ -495,3 +495,2683 @@ Nov 22, 2024 11:21:03 AM server.Servant permMapper
 INFO: 	readconfig	:	false
 Nov 22, 2024 11:21:03 AM server.Servant permMapper
 INFO: 	setconfig	:	false
+Nov 22, 2024 3:29:13 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 3:29:13 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: user
+Nov 22, 2024 3:29:13 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 3:29:13 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 3:29:13 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 3:29:13 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 3:29:13 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 3:29:24 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732286064168
+Nov 22, 2024 3:29:26 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 3:30:14 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: BobJanitor with role: tech
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 3:30:14 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: user
+Nov 22, 2024 3:30:14 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 3:30:14 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 3:30:14 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 3:30:14 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 3:30:14 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 3:30:27 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732286127390
+Nov 22, 2024 3:31:44 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 3:31:44 PM server.Servant print
+INFO: Print command received. User: DavidUser, File: 02239Assignment2_v2_final_final_v3_THIS_IS_THE_REAL_ONE_v4_done.docx, Printer: UnsecuredWifiPrinterSayGoodByeToYourInk
+Nov 22, 2024 5:05:13 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:05:13 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:05:13 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:05:13 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:05:13 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:05:13 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:05:13 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:05:38 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732291838718
+Nov 22, 2024 5:05:42 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:05:42 PM server.Servant restart
+INFO: Restart command received. User: IdaUser
+Nov 22, 2024 5:05:46 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:05:56 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:05:56 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:05:56 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:05:56 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:05:56 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:05:56 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:05:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:06:25 PM server.Servant login
+WARNING: Login failed for user: GeorgeUser
+Nov 22, 2024 5:07:01 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:07:01 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:07:01 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:01 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:01 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:01 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:01 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:06 PM server.Servant login
+INFO: User GeorgeUser logged in with session valid until: 1732291926922
+Nov 22, 2024 5:07:24 PM server.Servant isSessionValid
+INFO: Session extended for user: GeorgeUser
+Nov 22, 2024 5:07:40 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:07:40 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:07:40 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:40 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:40 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:40 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:40 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:46 PM server.Servant login
+INFO: User AliceAdmin logged in with session valid until: 1732291966124
+Nov 22, 2024 5:07:49 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:07:49 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:07:49 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:49 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:49 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:49 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:49 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:55 PM server.Servant login
+WARNING: Login failed for user: BobJanitor
+Nov 22, 2024 5:07:59 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:07:59 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:07:59 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:59 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:07:59 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:07:59 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:07:59 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:08:05 PM server.Servant login
+INFO: User GeorgeUser logged in with session valid until: 1732291985087
+Nov 22, 2024 5:08:10 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:08:10 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:08:10 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:08:10 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:08:10 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:08:10 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:08:10 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:08:16 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732291996281
+Nov 22, 2024 5:08:20 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:08:20 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:08:20 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:08:20 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:08:20 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:08:20 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:08:20 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:08:27 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732292007304
+Nov 22, 2024 5:08:47 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:08:47 PM server.Servant print
+INFO: Print command received. User: IdaUser, File: 123, Printer: test
+Nov 22, 2024 5:08:55 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:08:55 PM server.Servant restart
+INFO: Restart command received. User: IdaUser
+Nov 22, 2024 5:08:59 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:09:02 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:09:15 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:09:15 PM server.Servant topQueue
+INFO: Top queue command received. User: IdaUser, Printer: 123, Job: 555
+Nov 22, 2024 5:09:24 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:09:24 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:09:24 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:24 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:24 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:09:24 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:24 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:09:31 PM server.Servant login
+INFO: User CeciliaPowerUser logged in with session valid until: 1732292071337
+Nov 22, 2024 5:09:45 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:09:45 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:09:45 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:45 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:45 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:09:45 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:45 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:09:53 PM server.Servant login
+WARNING: Login failed for user: +
+Nov 22, 2024 5:09:57 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:09:57 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:09:57 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:57 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:09:57 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:09:57 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:09:57 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:10:07 PM server.Servant login
+INFO: User CeciliaPowerUser logged in with session valid until: 1732292107109
+Nov 22, 2024 5:15:27 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:15:27 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:15:27 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:27 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:27 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:15:27 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:27 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:15:32 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:15:32 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:15:32 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:32 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:32 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:15:32 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:32 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:15:51 PM server.Servant login
+WARNING: Login failed for user: IDApoweruser
+Nov 22, 2024 5:15:56 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:15:56 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:15:56 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:56 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:15:56 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:15:56 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:15:56 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:16:02 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732292462447
+Nov 22, 2024 5:25:38 PM server.Servant isSessionValid
+INFO: Session expired for user: IdaUser
+Nov 22, 2024 5:25:38 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: IdaUser
+Nov 22, 2024 5:25:55 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:25:55 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:25:55 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:25:55 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:25:55 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:25:55 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:25:55 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:26:03 PM server.Servant login
+INFO: User CeciliaPowerUser logged in with session valid until: 1732293063293
+Nov 22, 2024 5:26:08 PM server.Servant isSessionValid
+INFO: Session extended for user: CeciliaPowerUser
+Nov 22, 2024 5:26:08 PM server.Servant topQueue
+INFO: Top queue command received. User: CeciliaPowerUser, Printer: 123, Job: 31313
+Nov 22, 2024 5:26:14 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:26:14 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:26:14 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:26:14 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:26:14 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:26:14 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:26:14 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:26:26 PM server.Servant login
+INFO: User IdaUser logged in with session valid until: 1732293086407
+Nov 22, 2024 5:26:35 PM server.Servant isSessionValid
+INFO: Session extended for user: IdaUser
+Nov 22, 2024 5:26:35 PM server.Servant topQueue
+INFO: Top queue command received. User: IdaUser, Printer: 123, Job: 13131
+Nov 22, 2024 5:30:09 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:30:09 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:30:09 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:09 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:09 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:09 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:09 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:18 PM server.Servant login
+WARNING: Login failed for user: DavidUser
+Nov 22, 2024 5:30:22 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:30:22 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:30:22 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:22 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:22 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:22 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:22 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:27 PM server.Servant login
+WARNING: Login failed for user: DavidUser
+Nov 22, 2024 5:30:47 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:30:47 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:30:47 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:47 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:30:47 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:47 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:30:47 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:30:52 PM server.Servant login
+INFO: User DavidUser logged in with session valid until: 1732293352264
+Nov 22, 2024 5:30:55 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:30:55 PM server.Servant print
+INFO: Print command received. User: DavidUser, File: 123, Printer: 31313
+Nov 22, 2024 5:31:03 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:31:10 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:31:10 PM server.Servant queue
+INFO: Queue command received. User: DavidUser, Printer: 123
+Nov 22, 2024 5:31:16 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:31:20 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:31:25 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:32:01 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:32:06 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:32:15 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:32:57 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:33:07 PM server.Servant isSessionValid
+INFO: Session extended for user: DavidUser
+Nov 22, 2024 5:33:15 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:33:16 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:33:16 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:16 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:16 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:33:16 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:16 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:33:25 PM server.Servant login
+WARNING: Login failed for user: EricaUser
+Nov 22, 2024 5:33:34 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:33:34 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:33:34 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:34 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:34 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:33:34 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:34 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:33:46 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: AliceAdmin with role: admin
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: CeciliaPowerUser with role: poweruser
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: DavidUser with role: user
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: EricaUser with role: user
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: FredUser with role: user
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: GeorgeUser with role: tech
+Nov 22, 2024 5:33:46 PM server.Servant mapUsers
+INFO: Read user: IdaUser with role: poweruser
+Nov 22, 2024 5:33:46 PM server.Servant mapRoles
+INFO: Read role: admin with perms: 
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:46 PM server.Servant mapRoles
+INFO: Read role: tech with perms: 
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:33:46 PM server.Servant mapRoles
+INFO: Read role: poweruser with perms: 
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:33:46 PM server.Servant mapRoles
+INFO: Read role: user with perms: 
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:33:46 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:34:31 PM server.Servant login
+INFO: User EricaUser logged in with session valid until: 1732293571150
+Nov 22, 2024 5:34:37 PM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+Nov 22, 2024 5:34:43 PM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+Nov 22, 2024 5:34:43 PM server.Servant print
+INFO: Print command received. User: EricaUser, File: 758492390, Printer: 6541230
+Nov 22, 2024 5:34:54 PM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+Nov 22, 2024 5:35:01 PM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+Nov 22, 2024 5:35:04 PM server.Servant isSessionValid
+INFO: Session extended for user: EricaUser
+Nov 22, 2024 5:35:23 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:35:23 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:35:31 PM server.Servant login
+INFO: User FredUser logged in with session valid until: 1732293631010
+Nov 22, 2024 5:35:41 PM server.Servant isSessionValid
+INFO: Session extended for user: FredUser
+Nov 22, 2024 5:35:41 PM server.Servant print
+INFO: Print command received. User: FredUser, File: 123, Printer: 123
+Nov 22, 2024 5:35:51 PM server.Servant isSessionValid
+INFO: Session extended for user: FredUser
+Nov 22, 2024 5:35:59 PM server.Servant isSessionValid
+INFO: Session extended for user: FredUser
+Nov 22, 2024 5:36:06 PM server.Servant isSessionValid
+INFO: Session extended for user: FredUser
+Nov 22, 2024 5:36:10 PM server.Servant isSessionValid
+INFO: Session extended for user: FredUser
+Nov 22, 2024 5:36:17 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:36:17 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:36:21 PM server.Servant login
+INFO: User HenryUser logged in with session valid until: 1732293681804
+Nov 22, 2024 5:36:26 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 5:37:12 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	print	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	queue	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	start	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	stop	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	status	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	readconfig	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	setconfig	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	topqueue	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	restart	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	print	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	queue	:	true
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	topqueue	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	start	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	stop	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	restart	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	status	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	readconfig	:	false
+Nov 22, 2024 5:37:12 PM server.Servant permMapper
+INFO: 	setconfig	:	false
+Nov 22, 2024 5:37:17 PM server.Servant login
+INFO: User HenryUser logged in with session valid until: 1732293737827
+Nov 22, 2024 5:37:22 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 5:37:22 PM server.Servant print
+INFO: Print command received. User: HenryUser, File: 758493102, Printer: ghjfaskls
+Nov 22, 2024 5:37:28 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 5:37:31 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser
+Nov 22, 2024 5:37:38 PM server.Servant isSessionValid
+INFO: Session extended for user: HenryUser

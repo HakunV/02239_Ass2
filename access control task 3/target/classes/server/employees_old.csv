@@ -1,9 +1,8 @@
 username,role
 AliceAdmin,admin
+BobJanitor,tech
 CeciliaPowerUser,poweruser
 DavidUser,user
 EricaUser,user
 FredUser,user
-GeorgeUser,tech
-HenryUser,user
-IdaUser,poweruser
+GeorgeUser,user

@@ -42,6 +42,10 @@ public class Servant extends UnicastRemoteObject implements Service {
     private static final String PASSWORD_FILE = new File(MAIN_FOLDER + "passwords.csv").getAbsolutePath();
     private static final String EVENTLOG_FILE = new File(MAIN_FOLDER + "eventlogs").getAbsolutePath();
 
+    //Old files from before the internal restructuring (Bob leaving, Ida and Henry joining, George getting promoted)
+    //private static final String EMPLOYEES_FILE = new File(MAIN_FOLDER + "employees_old.csv").getAbsolutePath();
+    //private static final String PASSWORD_FILE = new File(MAIN_FOLDER + "passwords_old.csv").getAbsolutePath();
+
     public Servant() throws RemoteException {
         super();
 
@@ -93,16 +97,15 @@ public class Servant extends UnicastRemoteObject implements Service {
             IOE.printStackTrace();
         }
         /*
-            // Now consider the situation where Bob leaves the company and George takes over the responsibilities as service technician. At the same time, two new employees are hired: Henry, who should be granted the privileges of an ordinary user, and Ida who is a power user and should be given the same privileges as Cecilia.
-            userPasswordMap.put("AliceAdmin", "adminpass"); // Admin can do everything
-            userPasswordMap.put("George", "servicepass"); 
-            userPasswordMap.put("Ida", "IDApowerpass"); // Ida
-            userPasswordMap.put("CeciliaPowerUser", "powerpass"); // Power user can invoke print, queue, topQueue, start, stop, and restart operations
-            //  David, Erica, Fred and George are ordinary users who are only allowed to: print files and display the print queue.
-            userPasswordMap.put("David", "davidpass");
-            userPasswordMap.put("Erica", "ericapass");
-            userPasswordMap.put("Fred", "fredpass");
-            userPasswordMap.put("Henry", "henrypass"); // Henry
+            AliceAdmin, adminpass
+            BobJanitor, servicepass
+            GeorgeUser, georgian
+            IdaUser, IDApowerpass
+            CeciliaPowerUser, powerpass
+            DavidUser, secretpassword
+            EricaUser, pasword1234
+            FredUser, 1234567654321
+            HenryUser, henrypass
         */
 
     }
@@ -144,7 +147,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             if(!Arrays.equals(UserRolePair, FirstLine))
             {
                 EmployeeMap.put(UserRolePair[0], UserRolePair[1]);
-                logger.info("Read user: " + UserRolePair[0] + " with role: " + UserRolePair[1]);
+                //logger.info("Read user: " + UserRolePair[0] + " with role: " + UserRolePair[1]);
             }
         }
         BuffRead.close();
@@ -172,7 +175,7 @@ public class Servant extends UnicastRemoteObject implements Service {
 
             if(!Arrays.equals(RolePermPair, FirstLine))
             {
-                logger.info("Read role: " + RolePermPair[0] + " with perms: ");
+                //logger.info("Read role: " + RolePermPair[0] + " with perms: ");
                 RoleMap.put(RolePermPair[0], permMapper(RolePermPair[1].toCharArray()));
                 //UserRoleMap.put(RolePermPair[0], RolePermPair[1]);
             }
