@@ -325,7 +325,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             return "Login successful. Session active.";
         }
         logger.warning("Login failed for user: " + username);
-        return "Login failed. Invalid credentials.";
+        return "Login failed. Invalid credentials.\nWait 5 seconds to try again.";
     }
 
     // Session validation check

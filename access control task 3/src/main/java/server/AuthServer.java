@@ -5,6 +5,8 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
 import client.Client;
 
 public class AuthServer {
@@ -13,11 +15,18 @@ public class AuthServer {
         System.out.println();
         Registry reg = LocateRegistry.createRegistry(6969);
 
-        reg.rebind("Printer", new Servant());
+        Servant s = new Servant();
+
+        reg.rebind("Printer", s);
 
         System.out.println("Service Started");
         System.out.println();
 
         Client.client(args);
+        
+        // Shutting down the service
+
+        reg.unbind("Printer");
+        UnicastRemoteObject.unexportObject(s, true);
     }
 }
