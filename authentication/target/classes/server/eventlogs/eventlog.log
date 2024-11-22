@@ -94,3 +94,17 @@ nov. 22, 2024 3:17:19 AM server.Servant validateSession
 WARNING: Unauthorized access attempt by user: admin
 nov. 22, 2024 3:17:28 AM server.Servant login
 INFO: User admin logged in with session valid until: 1732241878244
+Nov 22, 2024 8:59:52 PM server.Servant configureLogger
+INFO: Logger configuration complete.
+Nov 22, 2024 9:00:00 PM server.Servant login
+WARNING: Login failed for user: admin
+Nov 22, 2024 9:00:13 PM server.Servant login
+INFO: User admin logged in with session valid until: 1732305628745
+Nov 22, 2024 9:00:21 PM server.Servant isSessionValid
+INFO: Session extended for user: admin
+Nov 22, 2024 9:00:21 PM server.Servant print
+INFO: Print command received. User: admin, File: cool.txt, Printer: coolprinter
+Nov 22, 2024 9:00:37 PM server.Servant isSessionValid
+INFO: Session expired for user: admin
+Nov 22, 2024 9:00:37 PM server.Servant validateSession
+WARNING: Unauthorized access attempt by user: admin

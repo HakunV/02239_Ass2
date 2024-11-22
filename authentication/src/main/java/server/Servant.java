@@ -28,7 +28,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
-    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 15000; // 5 minutes in milliseconds
 
     private static final String PASSWORD_FILE = new File("authentication/src/main/java/server/passwords.csv").getAbsolutePath();
     private static final String EVENTLOG_FILE = new File("authentication/src/main/java/server/eventlogs").getAbsolutePath();
