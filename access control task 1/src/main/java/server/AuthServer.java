@@ -23,6 +23,9 @@ public class AuthServer {
         System.out.println();
 
         Client.client(args);
+
+        // Shutting down the service
+
         reg.unbind("Printer");
         UnicastRemoteObject.unexportObject(s, true);
     }

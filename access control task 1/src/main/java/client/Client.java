@@ -66,6 +66,7 @@ public class Client {
         sc.close();
     }
 
+    // Helper Function
     private static void tryLogin() {
         while (!login()) {
             waitFor(5000);

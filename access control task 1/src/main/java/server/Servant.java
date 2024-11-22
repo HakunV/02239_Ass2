@@ -104,7 +104,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         }
     }
 
-
+    // Reads the information of a user in the "password.csv" file
     private String[] getUserInfo(String username) {
         BufferedReader reader = null;
         String line = "";
@@ -132,7 +132,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return null;
     }
 
-    // Simple authentication check
+    // Hashes of the inputted password and checks it with the hash stored for that user
     private boolean authenticate(String username, String password) {
         String[] userInfo = getUserInfo(username);
 
@@ -140,7 +140,10 @@ public class Servant extends UnicastRemoteObject implements Service {
             return false;
         }
 
+        // First hash the username with the salt of the user
         String userHash = hash_Argon2(userInfo[0], userInfo[2]);
+
+        // Then hash the given password with the hash from before
         String passwordHash = hash_Argon2(password, userHash);
 
         if (passwordHash.equals(userInfo[1])) {
@@ -149,7 +152,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return false;
     }
 
-    // Session creation
+    // Check Login and creates session if successful
     public String login(String username, String password) throws RemoteException {
         if (authenticate(username, password)) {
             long expirationTime = System.currentTimeMillis() + SESSION_DURATION;
@@ -161,7 +164,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return "Login failed. Invalid credentials.\nWait 5 seconds to try again";
     }
 
-    // Session validation check
+    // Checks if the session is expired. If not session is extended
     private boolean isSessionValid(String username) {
         if (activeSessions.containsKey(username)) {
             long currentTime = System.currentTimeMillis();
@@ -192,6 +195,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return true;
     }
 
+    // Checks the user rights from the Access Control List
     private boolean validateAccess(String username, String operation) throws RemoteException {
         String rights = getAccessRights(username);
         if (rights.equals("all")) {
@@ -207,6 +211,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return false;
     }
 
+    // Reads the access rights from the "AccessControl.csv" file
     private String getAccessRights(String username) {
         BufferedReader br = null;
         String line = "";
@@ -316,6 +321,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return "Unauthorized access.";
     }
 
+    // Generates a random salt. Used when adding new users
     private String getRandomSalt() {
         SecureRandom secRan = new SecureRandom();
         byte[] bytes = new byte[16];
@@ -324,6 +330,7 @@ public class Servant extends UnicastRemoteObject implements Service {
         return Base64.getEncoder().encodeToString(bytes);
     }
 
+    // Uses the Argon2 hash algorithm, because it is slow, and a standard for password hashing
     public String hash_Argon2(String password, String salt) {
         Security.addProvider(new BouncyCastleProvider());
 
