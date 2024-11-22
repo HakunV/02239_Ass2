@@ -35,7 +35,7 @@ public class Servant extends UnicastRemoteObject implements Service {
     private Map<String, String> EmployeeMap;
     private Map<String, Long> activeSessions; // Stores sessions with expiration time
     private Map<String, Map<String, Boolean>> RoleMap;
-    private static final long SESSION_DURATION = 30; // 5 minutes in milliseconds
+    private static final long SESSION_DURATION = 300000; // 5 minutes in milliseconds
     private static final String MAIN_FOLDER = "access control task 3\\src\\main\\java\\server\\";
     private static final String EMPLOYEES_FILE = new File(MAIN_FOLDER + "employees.csv").getAbsolutePath();
     private static final String ROLEPERM_FILE = new File(MAIN_FOLDER + "roles_perms.csv").getAbsolutePath();
@@ -117,7 +117,6 @@ public class Servant extends UnicastRemoteObject implements Service {
                 return RoleMap.get(Role).get(Perm);
             }
         }
-        
         return false;
     }
 
@@ -358,6 +357,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Print command received. User: " + username + ", File: " + fileName + ", Printer: " + printer);
             return "Printing " + fileName + " on " + printer;
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "print");
         return "Unauthorized access.";
     }
 
@@ -367,6 +367,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Queue command received. User: " + username + ", Printer: " + printer);
             return "Queue for printer " + printer + ": [Sample Job List]";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "queue");
         return "Unauthorized access.";
     }
 
@@ -376,6 +377,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Top queue command received. User: " + username + ", Printer: " + printer + ", Job: " + job);
             return "Moved job " + job + " to the top of the queue for printer " + printer;
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "topQueue");
         return "Unauthorized access.";
     }
 
@@ -385,6 +387,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Start command received. User: " + username);
             return "Print server started.";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "start");
         return "Unauthorized access.";
     }
 
@@ -394,6 +397,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Stop command received. User: " + username);
             return "Print server stopped.";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "stop");
         return "Unauthorized access.";
     }
 
@@ -403,6 +407,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Restart command received. User: " + username);
             return "Print server restarted.";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "restart");
         return "Unauthorized access.";
     }
 
@@ -412,6 +417,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Status command received. User: " + username + ", Printer: " + printer);
             return "Status of printer " + printer + ": [Sample status]";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "status");
         return "Unauthorized access.";
     }
 
@@ -421,6 +427,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Read configuration command received. User: " + username + ", Parameter: " + parameter);
             return "Configuration for " + parameter + ": [Sample value]";
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "readConfig");
         return "Unauthorized access.";
     }
 
@@ -430,6 +437,7 @@ public class Servant extends UnicastRemoteObject implements Service {
             logger.info("Set configuration command received. User: " + username + ", Parameter: " + parameter + ", Value: " + value);
             return "Set configuration parameter " + parameter + " to " + value;
         }
+        logger.warning("Unauthorized access attempt by user: " + username + ", Tried to run function: " + "setConfig");
         return "Unauthorized access.";
     }
 
